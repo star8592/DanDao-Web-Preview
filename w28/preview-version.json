@@ -1,0 +1,10 @@
+{
+  "project": "DanDao",
+  "channel": "W28-physical-smoke-windgate-audio-preview",
+  "sourceCommit": "92a928765551b42d1b4f7b38b0d6aa6b2b92e218",
+  "sourcePR": 13,
+  "builtAt": "2026-11-18",
+  "stage": "visual-auditory-review",
+  "production": false,
+  "note": "Root W22 and W27 pages unchanged"
+}
