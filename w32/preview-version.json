@@ -1,0 +1,12 @@
+{
+  "project": "DanDao",
+  "channel": "W32-adaptive-true-3d-smoke",
+  "sourceCommit": "fad3b116a326b8bf3e9fcb15006c57e33a4b624a",
+  "sourcePR": 17,
+  "builtAt": "2026-11-18",
+  "stage": "visual-performance-review",
+  "production": false,
+  "smokeMode": "24x36x22 XYZ voxels + real 3D WebGL sampler3D + adaptive 28/20/14 raymarch",
+  "materialMode": "RGBA DataTexture weathered bronze",
+  "note": "W29 W30 old preview paths untouched; never downgrades smoke to 2D"
+}

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head><meta name="robots" content="noindex,nofollow,noarchive">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <meta name="theme-color" content="#1c2927" />
+    <link rel="icon" type="image/svg+xml" href="/DanDao-Web-Preview/w32/favicon.svg" />
+    <meta name="description" content="丹道 · 一炉一世界。一抹青绿，一尊铜炉，随心炼丹。" />
+    <title>【W32 三维烟自适应试验】丹道 · 一炉一世界</title>
+    <script type="module" crossorigin src="/DanDao-Web-Preview/w32/assets/game-B2v8bdWq.js"></script>
+    <link rel="modulepreload" crossorigin href="/DanDao-Web-Preview/w32/assets/pill-aura-BjpzbSnc.js">
+    <link rel="stylesheet" crossorigin href="/DanDao-Web-Preview/w32/assets/game-CWejUZmo.css">
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="world" aria-label="中央青铜丹炉，拖动可旋转观察"></canvas>
+      <header class="heading">
+        <div class="seal">丹</div>
+        <div><div class="eyebrow">一炉一世界</div><h1>丹道</h1></div>
+        <button class="pouch-toggle" id="pouch-toggle" type="button" aria-label="查看乾坤囊" aria-expanded="false">乾坤囊 <span id="pouch-counter">0</span></button>
+        <button class="audio-toggle" id="audio" type="button" aria-label="开启音效" title="开启音效">♪ <span>音效关</span></button>
+      </header>
+      <button id="scroll-tab" class="scroll-tab" type="button" aria-expanded="false"><span>药<br />卷</span><i>❯</i></button>
+      <aside id="scroll" class="ingredient-scroll" aria-label="药材卷轴">
+        <div class="scroll-head"><span>本草六味</span><button type="button" id="close-scroll" aria-label="收起药卷">×</button></div>
+        <p class="scroll-intro">拣三味草木，次第入炉。顺序有其玄机。</p>
+        <div id="ingredient-list" class="ingredient-list"></div>
+        <p class="scroll-foot">丹炉未启前，可点药碟撤回。</p>
+      </aside>
+      <main class="stage-label">
+        <div class="clue-box" aria-live="polite"><div class="clue-label">观炉 · 辨相</div><p id="clue">炉火未燃。选三味药材，开始第一炉。</p></div>
+      </main>
+      <footer class="workbench">
+        <div class="bench-name"><span>投药</span><small>轻拖丹炉可旋转</small></div>
+        <div id="dishes" class="dishes"></div>
+        <div id="controls" class="controls">
+          <button type="button" id="ignite" class="action primary">✧ <span>生火开炼</span></button>
+          <button type="button" id="wood" class="action" disabled>◈ <span>添炭</span></button>
+          <button type="button" id="bellows" class="action" disabled>≈ <span>拉风箱</span></button>
+          <button type="button" id="vent" class="action" disabled>⌁ <span>调风口</span></button>
+          <button type="button" id="open" class="action" disabled>◎ <span>开炉</span></button>
+        </div>
+        <div class="bench-meta"><span id="status">待投药</span><span id="backend">画境准备中</span></div>
+      </footer>
+      <aside id="pouch" class="pouch-panel" hidden aria-label="乾坤囊收藏">
+        <header class="pouch-head"><div><small>个人收藏 · 本机留存</small><h2>乾坤囊</h2></div><button type="button" id="close-pouch" aria-label="关闭乾坤囊">×</button></header>
+        <div class="pouch-progress"><span id="pouch-tier">青纹乾坤囊</span><span id="pouch-usage">0 / 12</span></div>
+        <p class="pouch-hint">丹成自动入囊。灵力越深，囊内天地越宽。<span id="pouch-spirit">灵力 0</span></p>
+        <div id="pouch-items" class="pouch-items"></div>
+        <p class="pouch-foot">仅保存于当前浏览器。尚无买卖与转赠。</p>
+      </aside>
+      <section id="result" class="result-layer" hidden>
+        <div class="result-paper" role="dialog" aria-modal="true" aria-label="本炉丹药结果">
+          <div class="result-sun">✹</div>
+          <div class="result-eyebrow">丹成一刻</div>
+          <h2 id="result-name">凝元丹</h2>
+          <p id="result-grade"></p>
+          <p id="result-nature" aria-live="polite"></p>
+          <p id="result-reason"></p>
+          <p id="result-money"></p>
+          <p id="result-store" aria-live="polite"></p>
+          <a id="inspect-pill" class="inspect-pill" href="/DanDao-Web-Preview/w32/danpu.html" target="_blank" rel="noopener" hidden>放大观丹 · 看清纹理与流光</a>
+          <button id="again" class="again" type="button">再炼一炉</button>
+        </div>
+      </section>
+      <div id="error" class="error" hidden></div>
+    </div>
+  </body>
+</html>
