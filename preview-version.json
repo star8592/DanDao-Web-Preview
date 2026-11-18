@@ -1,0 +1,8 @@
+{
+  "project": "DanDao",
+  "channel": "W22-R8-public-compiled-preview",
+  "sourceCommit": "a8de2d5fd5d70de2e887c94501f0b05c4ab78ab2",
+  "builtAt": "2026-11-18",
+  "stage": "visual-review",
+  "production": false
+}
