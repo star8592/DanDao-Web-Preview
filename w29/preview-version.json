@@ -1,0 +1,11 @@
+{
+  "project": "DanDao",
+  "channel": "W29-true-xyz-voxel-smoke-black-rect-fix",
+  "sourceCommit": "f71057df6f48cd2a1c465d226da37c79d3f41056",
+  "sourcePR": 14,
+  "builtAt": "2026-11-18",
+  "stage": "visual-hardware-review",
+  "production": false,
+  "smokeMode": "advected-3d-voxel-WebGL2-sampler3D",
+  "note": "Old W28 has an unverified black plane; W29 replaces it without modifying W27/W28"
+}
