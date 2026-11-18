@@ -1,0 +1,12 @@
+{
+  "project": "DanDao",
+  "channel": "W30-advected-3d-voxel-smoke-vortices",
+  "sourceCommit": "4fc6069137838750c05575df48befaa83ad0d07b",
+  "sourcePR": 15,
+  "builtAt": "2026-11-18",
+  "stage": "visual-review",
+  "production": false,
+  "smokeMode": "3D 24x36x22 advected voxel + GL sampler3D; no smoke cards",
+  "materialMode": "driver-stable RGBA bronze DataTexture, same original patina",
+  "notes": "W29 old preview preserved; W30 independent review"
+}
