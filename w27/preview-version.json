@@ -1,0 +1,10 @@
+{
+  "project": "DanDao",
+  "channel": "W27-herb-miniatures-isolated-preview",
+  "sourceCommit": "c7cb879543a2dbe2383f6e7c6c8d2eb69d7d2eed",
+  "builtAt": "2026-11-18",
+  "stage": "visual-review",
+  "production": false,
+  "sourcePR": 12,
+  "note": "W22 root index remains untouched for A/B comparison"
+}
