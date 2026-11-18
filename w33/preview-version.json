@@ -1,0 +1,12 @@
+{
+  "project": "DanDao",
+  "channel": "W33-real-3d-smoke-volume-headroom-fix",
+  "sourceCommit": "261bee358e55715e568a25c0251f11582796e120",
+  "sourcePR": 18,
+  "builtAt": "2026-11-18",
+  "stage": "visual-review",
+  "production": false,
+  "smokeMode": "24x36x22 true XYZ density - 2.88x3.10x1.72 world volume with gradual boundary extinction",
+  "materialMode": "original bronze RGBA DataTexture, no change in furnace size",
+  "note": "W32 original game left unchanged, W33 changes only physical smoke room and fade"
+}
