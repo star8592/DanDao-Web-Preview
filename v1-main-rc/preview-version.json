@@ -1,0 +1,16 @@
+{
+  "project": "DanDao",
+  "title": "丹道 · 初入丹途",
+  "version": "V1 Web3D integrated candidate",
+  "source_commit": "4933b84fc17afefb7de9f0a9ff4ad8e7c1d99ce1",
+  "source_branch": "release/v1-web3d-integration-20261119",
+  "status": "staging_free_beta_pending_public_qa",
+  "production": false,
+  "payment_enabled": false,
+  "cloud_accounts": false,
+  "multiplayer": false,
+  "visual_signoff": "pending",
+  "physical_android_fps_signoff": "pending",
+  "previous_free_preview": "/DanDao-Web-Preview/v1-rc/",
+  "published_date": "2026-11-19"
+}
