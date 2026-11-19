@@ -1,0 +1,33 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>丹道 · P0 第二轮实机效果检查</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Noto Sans SC",sans-serif;color:#202a27;background:#f4f2ed}
+*{box-sizing:border-box}body{margin:0;padding:clamp(16px,3vw,40px)}
+main{max-width:1140px;margin:auto}h1{font-size:clamp(22px,3vw,34px);margin:8px 0}
+p{line-height:1.75;color:#66706a;margin:4px 0 22px}
+a{color:#285c48;text-underline-offset:3px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+figure{margin:0;background:#fff;border:1px solid #dedbd2;border-radius:12px;padding:12px;
+ box-shadow:0 9px 24px #1e2b2212}figure img{width:100%;display:block;border-radius:7px}
+figcaption{padding:12px 4px 3px;font-size:14px;line-height:1.7}
+figcaption strong{display:block;font-size:17px}
+small{color:#72766e}figure.mobile{grid-column:span 2;text-align:center}
+figure.mobile img{max-width:390px;margin:auto}
+@media(max-width:780px){.grid{grid-template-columns:1fr}figure.mobile{grid-column:span 1}}
+</style></head><body><main>
+<h1>《丹道》第二轮整改 · 实机画面</h1>
+<p>真实游戏浏览器截图，可对照检查丹药居中、纳入乾坤囊与锦缎收藏视图。
+<a href="../">打开新试玩版</a> · <a href="../../p0-reward/">打开上一轮对比版</a></p>
+<div class="grid">
+<figure><img src="earned.png" alt="真实公网 Chromium 开炉结果截图" loading="eager">
+<figcaption><strong>01 · 开炉观丹</strong>丹药由真实炼制结果生成，位于画面中央偏上。<br>
+<small>公网 Chrome · WebGL2 · 实际炼出上品凝元丹</small></figcaption></figure>
+<figure><img src="silk.png" alt="从真实丹药库存打开的丝绸衬底鉴赏截图" loading="eager">
+<figcaption><strong>02 · 乾坤囊单丹鉴赏</strong>真实 3D 丹药缩小陈列于立体丝绸衬底，可旋转细看。<br>
+<small>公网 Chrome · 经“纳入乾坤囊”后进入</small></figcaption></figure>
+<figure class="mobile"><img src="mobile-silk-fixture.png" alt="模拟手机尺寸的丝绸鉴赏布局测试" loading="lazy">
+<figcaption><strong>03 · 390px 模拟手机布局</strong>确认画框、按钮和丹药尺寸在窄屏上合适。<br>
+<small>此图使用预先准备的本地丹药存档夹具验证布局，不是实体手机 GPU 实测</small></figcaption></figure>
+</div><p style="margin-top:22px">说明：技术回归通过不代表美术最终签收。此页供视觉验收，原有正式预览不变。</p>
+</main></body></html>
