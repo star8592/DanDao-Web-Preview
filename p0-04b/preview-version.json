@@ -1,0 +1,9 @@
+{
+ "project":"DanDao",
+ "preview":"P0-04b improved mineral clarity and true mobile 3D LOD",
+ "source_commit":"9f80d4db2e800f6797ceec08e45016c6667aa945",
+ "source_branch":"feat/p0-04b-mineral-clarity-20261119",
+ "status":"user_visual_review_pending",
+ "supersedes_approved_versions":false,
+ "published_at":"2026-11-19"
+}

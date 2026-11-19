@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <meta name="theme-color" content="#1c2927" />
+    <link rel="icon" type="image/svg+xml" href="/DanDao-Web-Preview/p0-04b/favicon.svg" />
+    <meta name="description" content="丹道 · 一炉一世界。一抹青绿，一尊铜炉，随心炼丹。" />
+    <title>丹道 · 一炉一世界</title>
+    <script type="module" crossorigin src="/DanDao-Web-Preview/p0-04b/assets/game-C47pgmDU.js"></script>
+    <link rel="modulepreload" crossorigin href="/DanDao-Web-Preview/p0-04b/assets/pill-aura-Dqu7X4iC.js">
+    <link rel="stylesheet" crossorigin href="/DanDao-Web-Preview/p0-04b/assets/game-Bck5YPax.css">
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="world" aria-label="中央青铜丹炉，拖动可旋转观察"></canvas>
+      <header class="heading">
+        <div class="seal">丹</div>
+        <div><div class="eyebrow">一炉一世界</div><h1>丹道</h1></div>
+        <span id="wallet" class="wallet">灵石 —</span><button id="trial-toggle" class="trial-toggle" type="button">丹师试炼</button><button class="pouch-toggle" id="pouch-toggle" type="button" aria-label="查看乾坤囊" aria-expanded="false">乾坤囊 <span id="pouch-counter">0</span></button>
+        <button class="audio-toggle" id="audio" type="button" aria-label="开启音效" title="开启音效">♪ <span>音效关</span></button>
+      </header>
+      <section id="first-brew-guide" class="first-brew-guide" hidden aria-label="第一次炼丹操作引导" aria-live="polite">
+        <div class="first-brew-guide-top"><span id="first-brew-progress">初炉 · 开始</span>
+          <button type="button" id="first-brew-skip" aria-label="关闭第一次炼丹引导">×</button>
+        </div>
+        <strong id="first-brew-title">第一次炼丹</strong>
+        <p id="first-brew-message">从药卷挑选三味药材。</p>
+        <button type="button" id="first-brew-start">打开药卷</button>
+      </section>
+      <button type="button" id="first-brew-help" class="first-brew-help" hidden>初炉帮助</button>
+      <button id="scroll-tab" class="scroll-tab" type="button" aria-expanded="false"><span>药<br />卷</span><i>❯</i></button>
+      <aside id="scroll" class="ingredient-scroll" aria-label="药材卷轴">
+        <div class="scroll-head"><span>本草六味</span><button type="button" id="close-scroll" aria-label="收起药卷">×</button></div>
+        <p id="scroll-intro" class="scroll-intro">拣三味草木，次第入炉。顺序有其玄机。</p>
+        <button id="market-toggle" type="button" class="market-toggle">灵草坊市 · 选购进阶药材</button>
+        <section id="brew-recovery" class="brew-recovery" hidden>
+          <span>上次有一炉尚未完成。可收回未结算的药材。</span>
+          <button id="recover-brew" type="button">归还药材</button>
+        </section>
+        <div id="ingredient-list" class="ingredient-list"></div>
+        <p class="scroll-foot">丹炉未启前，可点药碟撤回。</p>
+      </aside>
+      <main class="stage-label">
+        <div class="clue-box" aria-live="polite"><div class="clue-label">观炉 · 辨相</div><p id="clue">炉火未燃。选三味药材，开始第一炉。</p></div>
+      </main>
+      <footer class="workbench">
+        <div class="bench-name"><span>投药</span><small>轻拖丹炉可旋转</small></div>
+        <div id="dishes" class="dishes"></div>
+        <div id="controls" class="controls">
+          <button type="button" id="ignite" class="action primary">✧ <span>生火开炼</span></button>
+          <button type="button" id="wood" class="action" disabled>◈ <span>添炭</span></button>
+          <button type="button" id="bellows" class="action" disabled>≈ <span>拉风箱</span></button>
+          <button type="button" id="vent" class="action" disabled>⌁ <span>调风口</span></button>
+          <button type="button" id="open" class="action" disabled>◎ <span>开炉</span></button>
+        </div>
+        <div class="bench-meta"><span id="status">待投药</span><span id="backend">画境准备中</span></div>
+      </footer>
+      <aside id="pouch" class="pouch-panel" hidden aria-label="乾坤囊收藏">
+        <header class="pouch-head"><div><small>个人收藏 · 本机留存</small><h2>乾坤囊</h2></div><button type="button" id="close-pouch" aria-label="关闭乾坤囊">×</button></header>
+        <div id="cultivation" class="cultivation">感气 · 灵息 0/30</div>
+        <div class="pouch-progress"><span id="pouch-tier">青纹乾坤囊</span><span id="pouch-usage">0 / 12</span></div>
+        <div id="pouch-filter" class="pouch-filter" role="group" aria-label="乾坤囊分类">
+          <button type="button" data-view="owned" aria-pressed="true">乾坤藏品</button>
+          <button type="button" data-view="archive" aria-pressed="false">丹谱留影</button>
+          <span id="pouch-gallery-count">藏丹 0</span>
+        </div>
+        <div id="pouch-items" class="pouch-items pill-grid" aria-label="一格一颗的丹药陈列"></div>
+        <button type="button" id="pouch-load-more" class="pouch-load-more" hidden>再展开</button>
+        <p class="pouch-foot">轻触丹药 · 放大观赏 <span id="pouch-spirit"></span></p>
+      </aside>
+      <section id="trial" class="trial-sheet" hidden role="dialog" aria-modal="true" aria-label="丹师晋级与丹炉">
+        <div class="trial-paper">
+          <header class="trial-head">
+            <div><small>丹师 · 资质 · 器物</small><h2>炼丹师进阶</h2></div>
+            <button id="trial-close" type="button" aria-label="关闭丹师进阶">×</button>
+          </header>
+          <div id="trial-profile" class="trial-profile">见习丹徒</div>
+          <div class="trial-furnace-choice">
+            <strong>炉具</strong>
+            <div class="trial-controls">
+              <button id="equip-f1" type="button">青铜丹炉 · 三味</button>
+              <button id="equip-f2" type="button">玄火丹炉 · 五味</button>
+            </div>
+          </div>
+          <div class="trial-certificate">
+            <h3>二品丹师 · 五味借炉试炼</h3>
+            <p>完成三次有效炼丹后，可免费借用统一玄火炉。按青灵草、月白花、赤阳根、玄砂、云露叶的顺序投入五味，在合适火候开炉。通过后永久获得二品资质。</p>
+            <button id="begin-trial" type="button">申请借炉考核</button>
+          </div>
+          <div class="trial-purchase">
+            <h3>玄火丹炉 · 120 灵石</h3>
+            <p>二品丹师方能购买。拥有后永久使用，可炼三味或五味丹方；双风道与厚炉壁改变实际控火惯性。</p>
+            <button id="buy-f2" type="button">购买玄火丹炉</button>
+          </div>
+          <p id="trial-status" class="trial-status" role="status"></p>
+        </div>
+      </section>
+      <section id="market" class="market-sheet" hidden role="dialog" aria-modal="true" aria-label="灵草坊市">
+        <div class="market-paper">
+          <header class="market-head">
+            <div><span class="market-eyebrow">炼丹补给</span><h2>灵草坊市</h2></div>
+            <button id="close-market" type="button" aria-label="关闭坊市">×</button>
+          </header>
+          <div class="market-balance" id="market-wallet">灵石 —</div>
+          <p class="market-intro">六味基础药材仍可取用。进阶材料使用灵石采购，开炉时入账留置；若炼败也会消耗。</p>
+          <div class="market-list" id="market-list"></div>
+          <p id="market-status" role="status" class="market-status">一颗丹药，只能出售或服用一次。</p>
+        </div>
+      </section>
+      <section id="result" class="result-layer" hidden aria-label="本炉炼丹结果">
+        <div class="result-paper" role="dialog" aria-label="真实三维丹药与炼丹结果">
+          <div class="result-eyebrow">丹成 · 实物呈现</div>
+          <h2 id="result-name">凝元丹</h2>
+          <div class="result-identity">
+            <span id="result-grade"></span>
+            <span id="result-nature" aria-live="polite"></span>
+          </div>
+          <p class="result-rotation-hint">在画面中拖动丹药，细看丹纹与色泽</p>
+          <p id="result-store" aria-live="polite"></p>
+          <details class="result-details">
+            <summary>本炉详细记录</summary>
+            <p id="result-reason"></p>
+            <p id="result-money"></p>
+            <a id="inspect-pill" class="inspect-pill" href="/DanDao-Web-Preview/p0-04b/danpu.html"
+              target="_blank" rel="noopener" hidden>独立窗口观丹</a>
+          </details>
+          <div class="result-actions">
+            <button id="reward-collect" type="button">纳入乾坤囊</button>
+            <button id="again" class="again" type="button">再炼一炉</button>
+          </div>
+          <div id="reward-share" class="reward-share" hidden>
+            <button id="reward-share-toggle" type="button" aria-expanded="false">
+              保存 / 分享这颗丹
+            </button>
+            <div id="reward-share-tools" class="reward-share-tools" hidden>
+              <div class="reward-share-options">
+                <button id="reward-share-photo" type="button">保存丹药图片</button>
+                <button id="reward-share-video" type="button">录制 10 秒开炉短片</button>
+                <button id="reward-share-game-link" type="button">转发试玩入口</button>
+                <button id="reward-share-cancel" type="button" hidden>取消录制</button>
+              </div>
+              <span id="reward-share-status" role="status" aria-live="polite"></span>
+              <a id="reward-share-download" hidden rel="noopener">再次保存文件</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="error" class="error" hidden></div>
+    </div>
+  </body>
+</html>
