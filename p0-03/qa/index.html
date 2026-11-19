@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f7f6f2">
+<title>丹道 · 第三项真实三维媒体验收</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Noto Sans SC",sans-serif;color:#27332e;background:#f7f6f2;font-synthesis:none}
+*{box-sizing:border-box}body{margin:0}a{color:#286049;text-underline-offset:3px}
+main{max-width:1130px;margin:auto;padding:clamp(20px,4vw,58px)}
+header{border-bottom:1px solid #d9ddd6;padding-bottom:26px;margin-bottom:27px}
+.eyebrow{font-size:11px;letter-spacing:.22em;color:#6d8975}
+h1{font-size:clamp(24px,3.3vw,38px);font-weight:600;letter-spacing:.045em;margin:9px 0}
+h2{font-size:19px;letter-spacing:.05em;margin:0 0 10px}
+p{font-size:14px;line-height:1.85;color:#67766b;margin:7px 0 15px}
+.links{display:flex;gap:18px;flex-wrap:wrap;font-size:14px;margin-top:18px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.panel{background:#fff;border:1px solid #e0e3dc;padding:20px;border-radius:14px}
+.medias{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+figure{margin:0;background:#fff;border:1px solid #e0e3dc;border-radius:14px;padding:13px}
+img{display:block;max-width:100%;height:auto;border-radius:8px}
+figure img{width:100%;object-fit:contain;background:#1c2927;max-height:550px}
+figcaption{font-size:13px;line-height:1.8;padding:10px 2px 3px}
+figcaption strong{display:block;font-size:15px;color:#29372e}
+video{display:block;max-width:100%;width:min(340px,100%);max-height:615px;border-radius:9px;background:#15231d;margin:auto}
+.meta{font-size:12px;color:#7c8880}
+.stack{display:flex;flex-direction:column;gap:13px}
+.downloads{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-top:13px;font-size:13px}
+.section-label{margin:30px 0 16px}
+.status{margin-top:30px;border-top:1px solid #d9ddd6;padding-top:17px;font-size:12px}
+@media(max-width:750px){.grid{grid-template-columns:1fr}.medias{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.medias{grid-template-columns:1fr}figure img{max-height:440px}main{padding:15px}h1{font-size:25px}}
+</style></head><body><main>
+<header>
+<div class="eyebrow">丹道 · P0-03 / 真实游戏媒体验收</div>
+<h1>开炉成丹，留下这一颗。</h1>
+<p>以下图片和视频直接来自真实 Three.js 游戏画面。短片使用 NVIDIA RTX 5070 Ti 硬件 Chrome 录制，
+并非 AI 生成的丹药宣传片。</p>
+<nav class="links">
+<a href="../">打开 P0-03 最新试玩版</a>
+<a href="../../p0-02/">对照第二项新手版</a>
+<a href="../../p0-r2/">对照已批准的开炉视觉版</a>
+</nav></header>
+<section class="grid">
+<div class="panel stack">
+<h2>开炉短片 · 10 秒</h2>
+<video controls playsinline preload="metadata" poster="furnace-poster.png">
+<source src="furnace-10s.mp4" type="video/mp4">
+<source src="furnace-original.webm" type="video/webm">
+浏览器不支持内嵌视频，请使用下方文件链接。
+</video>
+<div class="downloads">
+<a href="furnace-10s.mp4" download>保存 MP4 样片</a>
+<a href="furnace-original.webm" download>保存浏览器原始 WebM</a>
+</div>
+<p class="meta">MP4 是同一份原始 WebM 经 FFmpeg 转码的兼容播放版（H.264 + AAC）。
+视频内容为本炉真实 3D 开盖、丹气与丹体特写；原始 NVIDIA 录制约 148 个画面帧/10 秒，
+未达到正式商业片 24/30FPS 目标。播放器显示 24FPS 是转码输出时间基，不代表原始三维渲染已达到 24FPS。</p>
+</div>
+<div class="panel stack">
+<h2>真实成果图 · 720 × 1280</h2>
+<img src="earned-3d.png" alt="本炉真实上品凝元丹从三维游戏场景截取的竖屏成果图" style="height:min(560px,66vh);width:100%;object-fit:contain;background:#16241e">
+<div class="downloads"><a href="earned-3d.png" download>保存开炉成果 PNG</a></div>
+<p class="meta">这张丹药图来自本炉真实 WebGL2 画面，纹理种子不变，没有生成第二颗丹药。</p>
+</div>
+</section>
+<h2 class="section-label">乾坤囊 · 锦缎藏品与手机尺寸</h2>
+<section class="medias">
+<figure>
+<img src="silk-3d.png" alt="真实锦缎曲面上安放的三维丹药藏品竖屏截图" loading="lazy">
+<figcaption><strong>锦缎藏丹图</strong>从乾坤囊中打开单丹，再直接导出真实 3D 锦缎画面。<a href="silk-3d.png" download>保存 PNG</a></figcaption>
+</figure>
+<figure>
+<img src="mobile-earned-3d.png" alt="390像素模拟手机浏览器保存的实际竖屏开炉图片" loading="lazy">
+<figcaption><strong>模拟手机开炉成果</strong>390 × 844 浏览器视口真实炼制并导出。<a href="mobile-earned-3d.png" download>保存 PNG</a></figcaption>
+</figure>
+<figure>
+<img src="desktop-true-export.png" alt="分享图片和录制视频按钮的真实桌面游戏截图" loading="lazy">
+<figcaption><strong>真实游戏操作入口</strong>从结算界面展开，不改变丹药库存，不覆盖原有观丹构图。</figcaption>
+</figure>
+</section>
+<div class="status">205/205 代码测试通过；桌面 NVIDIA GPU、桌面软件 WebGL2、模拟手机浏览器的实际媒体导出通过。
+仍需实体 iOS/Android 保存和帧率验收、短视频平台上传格式验证与真人分享率实验。本页仅用于产品视觉签收。</div>
+</main></body></html>
