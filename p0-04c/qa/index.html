@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f6f5f1">
+<title>《丹道》P0-04c · 丹药材质新旧对照</title>
+<style>
+:root{font:15px/1.65 system-ui,-apple-system,"Noto Sans SC",sans-serif;color:#28372e;background:#f6f5f1}
+*{box-sizing:border-box}
+body{margin:0}
+main{max-width:1110px;padding:clamp(18px,4vw,55px);margin:auto}
+h1{font-size:clamp(24px,3.3vw,37px);font-weight:600;line-height:1.3;letter-spacing:.02em;margin:9px 0 13px}
+h2{font-size:19px;margin:35px 0 15px;font-weight:600}
+h3{font-size:16px;font-weight:600;margin:0 0 12px}
+p{font-size:14px;color:#627468;line-height:1.85}
+a{color:#29694d;text-underline-offset:3px}
+small{font-size:12px;color:#758478}
+nav{display:flex;gap:9px 22px;flex-wrap:wrap;padding:16px 0 21px;border-bottom:1px solid #dae1d7;font-size:14px}
+.kicker{font-size:11px;color:#77907f;letter-spacing:.19em}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}
+.card{background:white;border:1px solid #dfe4da;border-radius:12px;padding:11px;margin:0;min-width:0}
+.card img{width:100%;height:auto;max-height:600px;object-fit:contain;display:block;border-radius:7px;background:#192923}
+.card figcaption{font-size:13px;line-height:1.75;padding:12px 4px 4px;color:#46584a}
+.card figcaption b{font-size:15px;display:block;margin-bottom:3px;color:#28372e}
+.four{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px}
+.four .card{padding:7px}
+.four .card figcaption{text-align:center;padding:7px 0 2px}
+.four .card img{max-height:265px}
+.metrics{width:100%;border-collapse:collapse;font-size:13px;background:#fff}
+.metrics td,.metrics th{text-align:left;padding:10px;border-bottom:1px solid #e0e5dc}
+.metrics th{color:#526b57}
+.videoRow{display:grid;grid-template-columns:minmax(220px,380px) minmax(0,1fr);gap:26px;background:#fff;border:1px solid #dfe4da;border-radius:12px;padding:18px;align-items:center}
+video{width:100%;max-height:590px;display:block;object-fit:contain;border-radius:8px;background:#13241c}
+.foot{margin-top:37px;border-top:1px solid #d9e0d5;padding-top:14px}
+@media(max-width:700px){.four{grid-template-columns:repeat(2,minmax(0,1fr))}.grid{gap:9px}.card{padding:7px}.card figcaption{font-size:11px}.videoRow{grid-template-columns:1fr}.videoRow video{max-width:340px;margin:auto}}
+</style></head>
+<body><main>
+<div class="kicker">丹道 · P0-04c / 精细矿物层理验收</div>
+<h1>丹衣的纹路，终于贴合真正的三维表面</h1>
+<p>下面是同一颗丹、同一纹理种子、同一渲染机位的真实浏览器画面。这次修复的是丹衣 UV 与实体表面错位，不是用 AI 图片替换原游戏。</p>
+<nav>
+<a href="../">完整 3D 炼丹试玩</a>
+<a href="../danpu.html?quality=high&amp;nature=wood&amp;seed=1693708891">直接旋转检查新版丹药</a>
+<a href="../../p0-04b/">打开上一版对照</a>
+</nav>
+<h2>01 · 正常观丹：前后对照</h2>
+<div class="grid">
+<figure class="card"><img src="old.png" alt="旧版P0-04b真实木系丹药" loading="eager"><figcaption><b>旧版 P0-04b</b>颜色与实体矿纹未完全贴合，近看容易像模糊的彩色球。</figcaption></figure>
+<figure class="card"><img src="new.png" alt="修正UV后的P0-04c真实木系丹药" loading="eager"><figcaption><b>新版 P0-04c</b>偏心翠玉纹理与实心雕刻外壳对齐，正常外观即可辨认层理。</figcaption></figure>
+</div>
+<h2>02 · 真实三层内部：可旋转、可剖视</h2>
+<div class="grid">
+<figure class="card"><img src="old-core.png" alt="旧版丹髓三维剖视" loading="lazy"><figcaption><b>旧版内部</b>实心丹髓和半透明层已存在，但外丹衣纹理取向失配。</figcaption></figure>
+<figure class="card"><img src="new-core.png" alt="新版丹髓和丹衣剖视" loading="lazy"><figcaption><b>新版内部</b>独立实心晶髓、半透明凝晶层、完整外丹衣。<a href="../danpu.html?quality=high&amp;nature=wood&amp;seed=1693708891">进入旋转鉴赏</a></figcaption></figure>
+</div>
+<h2>03 · 四种药性，真实 3D 游戏截图</h2>
+<div class="four">
+<figure class="card"><img src="wood-normal.png" alt="木系翠玉丹" loading="lazy"><figcaption><b>木系</b>偏心翠脉</figcaption></figure>
+<figure class="card"><img src="fire-normal.png" alt="火系红色烧结丹" loading="lazy"><figcaption><b>火系</b>烧结红晶</figcaption></figure>
+<figure class="card"><img src="yin-normal.png" alt="阴系月魄丹" loading="lazy"><figcaption><b>阴系</b>柔和霜晶</figcaption></figure>
+<figure class="card"><img src="metal-normal.png" alt="金系矿脉丹" loading="lazy"><figcaption><b>金系</b>沉积矿纹</figcaption></figure>
+</div>
+<p>金系的横纹尚略显规则，阴系层理相对较淡；两项仍保留为美术改进点，不宣称最终品质已经达标。</p>
+<h2>04 · 手机尺寸不退化</h2>
+<div class="grid">
+<figure class="card"><img src="mobile-normal.png" alt="模拟手机390像素实际3D丹谱画面" loading="lazy"><figcaption><b>390px 手机模拟视口</b>真实 Chrome WebGL2，651×729 画布，46,848 三角面。不是实体手机 FPS 验收。</figcaption></figure>
+<figure class="card"><img src="silk-mobile.png" alt="模拟手机丹药锦缎收藏" loading="lazy"><figcaption><b>完整炼丹后收入乾坤囊</b>打开真实锦缎单丹 3D 鉴赏。</figcaption></figure>
+</div>
+<h2>05 · 本轮真实开炉 10 秒短片</h2>
+<div class="videoRow">
+<video controls playsinline preload="metadata" poster="earned.png"><source src="furnace-10s.mp4" type="video/mp4">请打开文件链接观看。</video>
+<div><h3>这颗丹，来自真实游戏</h3><p>使用 NVIDIA RTX 5070 Ti 运行 Three.js WebGL2，真实投药、控火、开炉并录制。共 146 个原生 3D 帧/10 秒，视频导出未改变灵石及丹药库存。</p>
+<p><a href="furnace-10s.mp4" download>保存 MP4 样片</a> · <a href="furnace-original.webm" download>保存原始 WebM</a> · <a href="earned.png" download>保存开炉成果 PNG</a></p>
+<small>MP4 是对浏览器原始 WebM 的 H.264/AAC 兼容转码。播放 24FPS 的重复帧不等于游戏真实达到了 24FPS。</small></div>
+</div>
+<div class="foot"><small>216/216 测试通过 · NVIDIA Chrome WebGL2 实际验收 · 模拟手机完整炼丹/收藏/分享通过 · 实体手机 FPS 与玩家视觉签收仍待完成。P0-04c 为独立候选，不覆盖已通过版本。</small></div>
+</main></body></html>
