@@ -1,8 +1,18 @@
 {
   "project": "DanDao",
-  "channel": "W22-R8-public-compiled-preview",
-  "sourceCommit": "a8de2d5fd5d70de2e887c94501f0b05c4ab78ab2",
-  "builtAt": "2026-11-18",
-  "stage": "visual-review",
-  "production": false
+  "title": "丹道 · 初入丹途",
+  "version": "V1 Web3D public free beta",
+  "source_commit": "7b0de7fd3c24006fd8f4565cfdda9f7d2be38c4f",
+  "source_branch": "main",
+  "deployment_environment": "public_github_pages_root",
+  "status": "public_free_beta",
+  "production": true,
+  "payment_enabled": false,
+  "cloud_accounts": false,
+  "multiplayer": false,
+  "visual_signoff": "pending",
+  "physical_android_fps_signoff": "pending",
+  "rollback_previous_pages_commit": "4f26df582e65e8291413e33934d4b4e0b6892b8c",
+  "last_verified_staging": "/DanDao-Web-Preview/v1-main-rc/",
+  "published_date": "2026-11-19"
 }

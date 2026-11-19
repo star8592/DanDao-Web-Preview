@@ -1,4 +1,4 @@
-import{di as b,aB as S,Y as g,dj as N,C as T,k as l,e as q,aa as M}from"./pill-aura-BOfbCJ_e.js";const E=`out vec3 vLocal;
+import{dn as b,aB as S,Y as g,dp as N,C as T,k as l,e as q,aa as M}from"./pill-aura-BMG8puuE.js";const E=`out vec3 vLocal;
 void main(){
   vLocal=position;
   gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.);
