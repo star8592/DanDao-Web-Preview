@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f6f5f2">
+<title>丹道 · P0-04d 丹药材质真实对照</title>
+<style>
+:root{font:15px/1.65 system-ui,-apple-system,"Noto Sans SC",sans-serif;background:#f6f5f2;color:#26392f}
+*{box-sizing:border-box}
+body{margin:0}
+main{max-width:1130px;margin:auto;padding:clamp(16px,4vw,55px)}
+.kicker{font-size:11px;letter-spacing:.22em;color:#779182}
+h1{font-size:clamp(24px,3.2vw,38px);line-height:1.3;font-weight:600;margin:10px 0}
+h2{font-size:20px;font-weight:600;margin:33px 0 13px}
+p{font-size:14px;color:#65766b;line-height:1.8}
+a{color:#236d51;text-underline-offset:3px}
+nav{display:flex;flex-wrap:wrap;gap:9px 22px;font-size:14px;padding:19px 0 23px;border-bottom:1px solid #dce3da}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}
+figure{background:#fff;border:1px solid #dfe5dc;border-radius:12px;margin:0;padding:11px;min-width:0}
+figure img{display:block;width:100%;height:auto;object-fit:contain;border-radius:8px;background:#172820}
+figcaption{font-size:13px;line-height:1.75;padding:10px 3px 2px;color:#566459}
+figcaption b{display:block;color:#2e3d31;font-size:15px}
+table{width:100%;border-collapse:collapse;background:white;font-size:13px}
+th,td{text-align:left;padding:11px;border-bottom:1px solid #e0e6dd}
+th{color:#586a5e;font-weight:600}
+.video{display:flex;align-items:center;gap:25px;flex-wrap:wrap;padding:15px;background:white;border:1px solid #dfe5dc;border-radius:12px}
+video{display:block;width:min(100%,300px);max-height:510px;background:#1d3227;border-radius:8px}
+.video div{flex:1;min-width:190px}
+.muted{font-size:12px;color:#798779}
+footer{font-size:12px;color:#788578;border-top:1px solid #dce3d8;margin-top:38px;padding-top:15px}
+@media(max-width:650px){.grid{gap:9px}figure{padding:7px}figcaption{font-size:11px}figcaption b{font-size:12px}h2{font-size:18px}th,td{padding:8px 6px;font-size:11px}}
+</style></head><body><main>
+<div class="kicker">丹道 / P0-04d / 实际 WebGL2 验收</div>
+<h1>矿脉不再是横线，霜晶不再只是白色云纹</h1>
+<p>以下均为同种子、同机位的真实 Three.js 三维游戏截图，便于直接观察新旧差异；不使用 AI 概念画替代游戏模型。</p>
+<nav>
+<a href="../">进入 P0-04d 炼丹试玩</a>
+<a href="../danpu.html?nature=metal&amp;quality=high&amp;seed=1693708891">3D 旋转金系丹药</a>
+<a href="../danpu.html?nature=yin&amp;quality=divine&amp;seed=1693708891">3D 旋转阴系丹药</a>
+<a href="../../p0-04c/">对比上一版 P0-04c</a>
+</nav>
+<h2>01 · 金系：等距横纹 → 自然矿脉</h2>
+<div class="grid">
+<figure><img src="metal-old.png" alt="旧版金系三维丹药，规则横向金纹"><figcaption><b>上一版 · P0-04c</b>横向等距叠纹较明显，看起来偏机械。</figcaption></figure>
+<figure><img src="metal-new.png" alt="新版金系三维丹药，斜向不规则断续金石脉络"><figcaption><b>新版 · P0-04d</b>沿三维空间方向沉积的斜向、局部断续的矿脉。</figcaption></figure>
+</div>
+<h2>02 · 阴系：灰白云球 → 冷月石与霜晶</h2>
+<div class="grid">
+<figure><img src="yin-old.png" alt="旧版阴系丹药浅灰白云纹"><figcaption><b>上一版 · P0-04c</b>丹身色差偏低，晶体生长不够明确。</figcaption></figure>
+<figure><img src="yin-new.png" alt="新版阴系月魄丹药的冷蓝色晶髓与细晶脉"><figcaption><b>新版 · P0-04d</b>银蓝冷月石、微晶边界、真实三维细枝。仍待进一步审美检验。</figcaption></figure>
+</div>
+<h2>03 · 真实三层结构及锦缎收藏</h2>
+<div class="grid">
+<figure><img src="yin-inner.png" loading="lazy" alt="阴系丹药剖视真实三层晶核与外丹衣"><figcaption><b>阴系 · 实心晶核剖视</b>可在 <a href="../danpu.html?nature=yin&amp;quality=divine&amp;seed=1693708891">真实 3D 丹谱</a> 里旋转、打开及复原。</figcaption></figure>
+<figure><img src="silk.png" loading="lazy" alt="模拟手机完成炼丹后，锦缎上放置的3D丹药"><figcaption><b>收入乾坤囊后 · 锦缎收藏</b>模拟手机真实游戏流程截屏，比例没有故意放大。</figcaption></figure>
+</div>
+<h2>04 · 手机资源与功能回归</h2>
+<table>
+<thead><tr><th>项目</th><th>实测结果</th></tr></thead>
+<tbody>
+<tr><td>桌面/模拟手机切换测试</td><td>各连续 24 次，脚本错误 0</td></tr>
+<tr><td>纹理数量与绘制调用</td><td>最多 6 张纹理 / 10 次 draw calls</td></tr>
+<tr><td>模拟手机 390×844</td><td>最高约 46,904 三角面，无横向溢出</td></tr>
+<tr><td>完整开炉、分享、乾坤囊</td><td>通过，账本与丹药身份不变</td></tr>
+</tbody>
+</table>
+<p>这里的手机数据来自桌面 NVIDIA GPU 的触屏模拟，并非实体 Android 或 iPhone 的 FPS 验收。</p>
+<h2>05 · 本轮真正开炉的短片</h2>
+<div class="video">
+<video playsinline controls preload="metadata" poster="reward.png">
+<source src="real-furnace.mp4" type="video/mp4">浏览器不支持该视频格式
+</video>
+<div><p>实际 NVIDIA RTX 5070 Ti Chrome WebGL2 从投药、点火、开炉生成的 10 秒录像，所得上品凝元丹与库存身份一致。</p>
+<p><a href="real-furnace.mp4" download>保存 MP4 样片</a> · <a href="real-furnace-original.webm" download>保存原始录像</a> · <a href="reward.png" download>保存成丹 PNG</a></p>
+<p class="muted">原生 3D 视频共 146 帧/10 秒（约 14.6FPS）。MP4 已转换为 H264/AAC 兼容格式，不把转码后的补帧冒充原生游戏帧率。</p>
+</div>
+</div>
+<footer>220/220 项自动测试通过；网页和视频须以真实浏览器公网上线验收为准。P0-04d 为独立候选，美术最终签收、实体 Android/iOS 性能、视频原生 24/30FPS 均仍未完成。</footer>
+</main></body></html>
