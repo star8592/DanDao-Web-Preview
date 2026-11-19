@@ -1,0 +1,38 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>丹道V1 · 真游戏视觉验收</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Noto Sans SC",sans-serif;background:#f5f4ef;color:#28372c}
+*{box-sizing:border-box}
+body{margin:0;padding:clamp(16px,3vw,42px)}
+main{max-width:1140px;margin:auto}
+h1{font-weight:550;font-size:clamp(23px,3vw,34px);margin:0 0 8px}
+p{color:#68746a;line-height:1.75}
+a{color:#275e49;text-underline-offset:3px}
+.actions{display:flex;gap:22px;flex-wrap:wrap;margin:0 0 22px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+figure{margin:0;border:1px solid #dcded7;border-radius:11px;padding:12px;background:white;box-shadow:0 9px 30px #19271d12}
+figure img,figure video{width:100%;display:block;border-radius:7px;max-height:500px;object-fit:contain;background:#21302a}
+figcaption{padding:11px 4px 4px;font-size:14px;line-height:1.8}
+figcaption strong{font-size:17px;display:block}
+figure.large{grid-column:span 2}
+figure.large video{max-height:640px}
+@media(max-width:700px){.grid{grid-template-columns:1fr}figure.large{grid-column:span 1}}
+</style></head><body><main>
+<h1>《丹道：初入丹途》V1.0 RC1 · 实机验收</h1>
+<p>以下是同一份整合候选工程的实际 WebGL2 游戏截图、原生三维丹药和视频证据，不是 AI 画的宣传概念图。所有画面均需玩家主观美术签收。</p>
+<div class="actions"><a href="../">进入完整试玩</a><a href="../preview-version.json">检查发布版本</a></div>
+<div class="grid">
+<figure><img src="first-visit.png" alt="空存档首次进入画面" loading="eager"><figcaption><strong>01 · 首次进入</strong>真实 3D 青铜炉、新手引导和药卷。</figcaption></figure>
+<figure><img src="first-reward.png" alt="真实开炉上品凝元丹" loading="eager"><figcaption><strong>02 · 真实开炉成丹</strong>正常投药、风箱、火候采样后产生并保存上品凝元丹。</figcaption></figure>
+<figure><img src="layered-pill.png" alt="三层雕刻丹体观赏" loading="lazy"><figcaption><strong>03 · 三层丹体</strong>独立 WebGL2 观丹模式。非玩家初炉时同一颗的截图，属于真实渲染的材质示例。</figcaption></figure>
+<figure><img src="layered-pill-cutaway.png" alt="三层晶核剖视" loading="lazy"><figcaption><strong>04 · 透视丹髓</strong>同一试验种子的真实 3D 剖视；可以返回普通观赏模式。</figcaption></figure>
+<figure><img src="mentor-orders.png" alt="师门真实丹药选择交单" loading="lazy"><figcaption><strong>05 · 师门委托</strong>使用正式规则准备合法库存后，在真实 Chrome UI 中选独立丹药交单；不得解释成已有人类玩家完成全部前置炼丹。</figcaption></figure>
+<figure><img src="earned-pill-portrait.png" alt="游戏实际导出的竖屏上品丹" loading="lazy"><figcaption><strong>06 · 真实晒丹</strong>从玩家真实三维游戏画面生成的 720×1280 PNG，不是额外合成的宣传丹药。</figcaption></figure>
+<figure class="large"><video src="actual-3d-replay.mp4" controls preload="metadata" playsinline></video>
+<figcaption><strong>07 · 10 秒真实开炉视频</strong>GPU 原生 Chrome 录制 WebM 的实际 3D 画面转码成 H.264/AAC MP4 方便播放。原始视频约 146 个画面帧/10 秒，不是 30FPS；音频源曾出现 Opus 解析警告，本 MP4 文件已通过解码检查。<br>
+此视频不是 AI 生成或动画重绘，也不能代替真手机性能验收。</figcaption></figure>
+</div>
+<p style="margin-top:20px">当前仅免费发布候选试玩。无服务器账号、多人交易或现金支付。丹药与灵石存储于该浏览器本机 IndexedDB，清理网站数据会清除进度。</p>
+</main></body></html>
