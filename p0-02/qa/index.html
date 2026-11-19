@@ -1,0 +1,29 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>丹道 · P0-02 初炉引导实机验收</title>
+<style>:root{font-family:system-ui,"Noto Sans SC",sans-serif;background:#f5f3ee;color:#253029}*{box-sizing:border-box}body{margin:0;padding:clamp(12px,3vw,35px)}
+main{max-width:1180px;margin:auto}h1{font-size:clamp(21px,3vw,34px);margin:7px 0}
+p{line-height:1.7;color:#6b736e;margin:6px 0 22px}
+a{color:#285f4a;text-underline-offset:3px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+figure{margin:0;background:#fff;border-radius:11px;border:1px solid #dedbd2;padding:12px;box-shadow:0 8px 24px #25302a13}
+img{width:100%;height:auto;display:block;border-radius:7px}
+figcaption{padding:10px 3px 2px;line-height:1.7;font-size:14px}figcaption strong{display:block;font-size:17px}
+.mobile-row{display:flex;gap:18px;justify-content:center;margin-top:18px}
+.mobile-row figure{max-width:390px;flex:1}
+@media(max-width:740px){.grid{grid-template-columns:1fr}.mobile-row{flex-direction:column;align-items:center}.mobile-row figure{width:100%}}
+</style></head><body><main>
+<h1>《丹道》P0-02 · 第一次炼丹</h1>
+<p>以下来自真实 Chrome WebGL2 浏览器的空存档完整流程截图。没有自动投药或伪造丹药。<br>
+<a href="../">打开第二项最新试玩</a> · <a href="../../p0-r2/">对照第一项已通过版本</a></p>
+<div class="grid">
+<figure><img src="desktop-start.png" alt="新玩家首次进入炼丹界面"><figcaption><strong>01 · 第一次进入</strong>简短提示打开药卷，丹炉保持可见。</figcaption></figure>
+<figure><img src="desktop-herbs.png" alt="药卷选择三味药材"><figcaption><strong>02 · 选药</strong>提示进入药卷内部，推荐三味但不强制。</figcaption></figure>
+<figure><img src="desktop-fire.png" alt="第一次真实点火和风箱操作"><figcaption><strong>03 · 观火</strong>真实点火、拉风箱，等待火候成熟。</figcaption></figure>
+<figure><img src="desktop-reward.png" alt="第一次炼出上品凝元丹"><figcaption><strong>04 · 开炉</strong>真实炼出上品凝元丹，安全写入乾坤囊。</figcaption></figure>
+</div>
+<div class="mobile-row">
+<figure><img src="mobile-start.png" alt="手机模拟首屏布局"><figcaption><strong>05 · 390px 首次进入</strong>模拟移动视口；非实体手机 GPU 实测。</figcaption></figure>
+<figure><img src="mobile-herbs.png" alt="手机模拟药卷引导"><figcaption><strong>06 · 390px 药卷</strong>提示随药卷展开，不覆盖药材。</figcaption></figure>
+</div>
+<p>技术记录：201/201 自动化测试通过；自动化从点击打开药卷到首炉结果约 40.43 秒，不含页面加载，也不等于普通玩家用时。此页供美术与交互验收。</p>
+</main></body></html>

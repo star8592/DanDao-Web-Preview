@@ -1,0 +1,10 @@
+{
+  "project": "DanDao",
+  "preview": "P0-02 first-brew onboarding review",
+  "source_commit": "5578bb483826aecbb066573b6f05dcda6f243534",
+  "source_branch": "feat/p0-first-brew-guide-20261119",
+  "status": "user_visual_review_pending",
+  "based_on_approved_r2": true,
+  "replaces_existing_preview": false,
+  "published_at": "2026-11-19"
+}
