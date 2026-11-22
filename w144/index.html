@@ -50,7 +50,16 @@ footer{color:#a1b1a3;font-size:12px;line-height:1.9;margin-top:38px;border-top:1
 <figure><img src="real-brew-result.png" alt="七炉刻自然炼丹后的本地实际游戏画面" loading="lazy"><figcaption>实际投药、控火及七炉刻后，服务器签发原丹，游戏显示真实结算状态。</figcaption></figure>
 <figure><img src="real-public-3d-danjian-mobile.png" alt="390像素手机浏览器视口匿名鉴赏该原丹的三维页面" loading="lazy"><figcaption>390px Chrome 匿名访客打开公开丹鉴：同一原丹的真实三维外观，可旋转、药性可辨。正式上线后才会提供真实用户访问链接。</figcaption></figure>
 </section>
-<section class="proof">
+<section class="showcase" style="border-top:1px solid #99806055;padding-top:30px">
+<h2>04 · W144 正式服真实验收（2026-11-22）</h2>
+<p class="intro" style="margin-bottom:17px">正式版发布后，使用一个明确标记用途的 QA 新访客在公网实际炼成上品凝元丹（8 炉刻），在游戏内二次确认公开，再由不带登录 Cookie 的浏览器查看真实三维丹鉴。图片来自正式网站 Chrome 实际截图，不是此前隔离 PG 的画面。该公开测试链接已撤销，不在此保留任何可用短码。</p>
+<div class="details" style="padding-top:12px">
+<figure><img loading="lazy" src="production-qa-natural-8tick-desktop.png" alt="W144 正式服 Chrome 1440 像素桌面真实八刻炼丹结算截图"><figcaption>正式生产版真实炼丹与开炉（1440px）。测试独立新访客，不触碰既有玩家。</figcaption></figure>
+<figure><img loading="lazy" src="production-qa-natural-8tick-mobile.png" alt="W144 正式服 Chrome 手机390像素炼丹结算截图"><figcaption>同一个真实生产测试炉次，390px 手机浏览器宽度，不产生页面横向溢出。</figcaption></figure>
+</div>
+<figure style="max-width:390px;margin-top:24px"><img loading="lazy" src="production-qa-anonymous-danjian-mobile.png" alt="正式生产站 W144 匿名访客看到的原丹三维丹鉴实景"><figcaption>完全匿名的公网访客进入正式版 /s/ 真实丹鉴，三维场景成功加载。测试链接已撤销，正式生产专属OG封面后台暂未启用。</figcaption></figure>
+<p class="small" style="font-size:12px;color:#afbdab;margin-top:16px">发布当轮验证：PostgreSQL 005/006 迁移、W77 双槽切换、正式 API/静态指纹、丹鉴 SSR、匿名 WebGL 鉴赏均通过。生产专属封面暂无 Chrome worker，自动回退通用品牌图；不宣称已经支持微信/YouTube/Meta/X 的无需授权自动发布。</p>
+</section><section class="proof">
 <h2>03 · 真正核验过的完整操作</h2>
 <p>首次点击公开不会发布。第二次确认后，服务器才签发作品短码、允许陌生访客浏览；后台从真实外观种子生成专属三维预览。作者进入管理页再二次确认撤销后，网页、公开 API 与封面均返回 404，数据库中的灵石、丹药与原始炼炉记录完整不变。</p>
 <div class="nav"><a href="https://star8592.github.io/DanDao-Web-Preview/w143/">观看十秒真实开炉视频</a><a class="secondary" href="https://github.com/star8592/DanDao/pull/144">查看 W144 GitHub 实测记录</a><a class="secondary" href="https://dandao.playmoru.com/">正式游戏首页</a></div>
