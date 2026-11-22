@@ -1,0 +1,32 @@
+{
+  "title": "DanDao W143 isolated real-3D video QA, not production",
+  "date": "2026-11-22",
+  "sourceRepo": "star8592/DanDao",
+  "sourceCommit": "b930a77bb2ecea87622b7391dc279b845fb7b7f6",
+  "hardware": "NVIDIA RTX 5070 Ti",
+  "source": "real browser WebGL furnace gameplay and same earned pill",
+  "sourceFrames": 225,
+  "compatibleMp4Frames": 225,
+  "nativeMp4Frames": 226,
+  "interpolatedFrames": 0,
+  "gpuFrameRateApprox": 22.5,
+  "productionStatus": "not released; draft PR #143",
+  "files": {
+    "cinematic-compatible-h264-aac.mp4": {
+      "bytes": 485146,
+      "sha256": "dcd4a6da04ad7f0a82062fce7300feaf1056378ac64c6e97a0a4627187e18a76"
+    },
+    "native-mp4-original-10s.mp4": {
+      "bytes": 1179486,
+      "sha256": "f99d6f67b20411dd209aa9a9dc364f0e306685dd9c9e238231b664846438e4c4"
+    },
+    "cinematic-actual-frames.jpg": {
+      "bytes": 28425,
+      "sha256": "ce3e0b1f05b157b455540418ec0e5c4fad518e1176a512e89dfac2c33c96d965"
+    },
+    "cinematic-poster.jpg": {
+      "bytes": 24024,
+      "sha256": "c09fd7b4ee7301fd8e405e0913627cfd7263d1802cec2b94984120cc4b6dd19e"
+    }
+  }
+}
