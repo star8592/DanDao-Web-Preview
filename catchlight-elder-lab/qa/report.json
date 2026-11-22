@@ -1,0 +1,38 @@
+{
+  "desktop": {
+    "info": {
+      "width": 1440,
+      "viewport": 1440,
+      "canvas": {
+        "x": 730,
+        "y": -55.34375,
+        "width": 631.40625,
+        "height": 470,
+        "top": -55.34375,
+        "right": 1361.40625,
+        "bottom": 414.65625,
+        "left": 730
+      },
+      "instrument": "原生动画参数：175 项交互循环：43/秒（非 GPU 帧率）渲染错误：无"
+    },
+    "errors": []
+  },
+  "mobile": {
+    "info": {
+      "width": 390,
+      "viewport": 390,
+      "canvas": {
+        "x": 17,
+        "y": -73.265625,
+        "width": 356,
+        "height": 330,
+        "top": -73.265625,
+        "right": 373,
+        "bottom": 256.734375,
+        "left": 17
+      },
+      "instrument": "原生动画参数：175 项交互循环：60/秒（非 GPU 帧率）渲染错误：无"
+    },
+    "errors": []
+  }
+}
