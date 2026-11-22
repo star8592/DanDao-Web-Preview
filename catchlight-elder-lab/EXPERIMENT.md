@@ -11,3 +11,5 @@ Status: original elder **real Catchlight .clm model**, independently previewed; 
 - Main game, economy, save data and existing W branches are untouched.
 - Upstream: hyperlogue/catchlight @ aeaeca12013e230de3dbd733e85901ba698c2afe.
 - Third-party licensing remains in legal/.
+
+- Real Chrome action recording: qa/elder-actions-real-browser.webm (VP8, ~11 seconds); QA GIF at qa/elder-actions-real-browser.gif. This is not AI-generated video or a native GPU FPS metric.
