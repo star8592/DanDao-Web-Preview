@@ -59,7 +59,12 @@ footer{color:#a1b1a3;font-size:12px;line-height:1.9;margin-top:38px;border-top:1
 </div>
 <figure style="max-width:390px;margin-top:24px"><img loading="lazy" src="production-qa-anonymous-danjian-mobile.png" alt="正式生产站 W144 匿名访客看到的原丹三维丹鉴实景"><figcaption>完全匿名的公网访客进入正式版 /s/ 真实丹鉴，三维场景成功加载。测试链接已撤销，正式生产专属OG封面后台暂未启用。</figcaption></figure>
 <p class="small" style="font-size:12px;color:#afbdab;margin-top:16px">发布当轮验证：PostgreSQL 005/006 迁移、W77 双槽切换、正式 API/静态指纹、丹鉴 SSR、匿名 WebGL 鉴赏均通过。生产专属封面暂无 Chrome worker，自动回退通用品牌图；不宣称已经支持微信/YouTube/Meta/X 的无需授权自动发布。</p>
-</section><section class="proof">
+</section><section class="showcase" style="border-top:1px solid #99806055;padding-top:33px">
+<h2>05 · W145 正式服务器原创三维社交封面（已启用）</h2>
+<p class="intro" style="margin:0 0 20px">这张是实际生产服务器在独立 systemd 服务内，使用官方 Chrome 的真实 Namespace + Seccomp 沙箱，从已核验的自然炼制 QA 原丹生成的原创 1200×630 PNG。首轮封面有中文方框；补装 Noto CJK 后重新生成，并已对照画面检查正常。图片只是验证渲染能力的 QA 原丹，不是尚在公开的真实玩家作品。</p>
+<figure><img src="production-w145-real-cjk-3d-pill-og.png" width="1200" height="630" loading="lazy" alt="W145 正式服务器沙箱 Chrome/Three.js 真实生成的凝元丹专属社交缩略图，丹道与品阶中文完整可见"><figcaption>W145 真实生产 PNG · 420,032 字节 · 丹道／凝元丹／上品·木性等文字完整。渲染后台采用独立 PG 低权限角色、800MB 内存硬限制、45% CPU 限额；测试完成后该 QA 作品已撤销，公网图片接口返回404，游戏经济存档不变。</figcaption></figure>
+</section>
+<section class="proof">
 <h2>03 · 真正核验过的完整操作</h2>
 <p>首次点击公开不会发布。第二次确认后，服务器才签发作品短码、允许陌生访客浏览；后台从真实外观种子生成专属三维预览。作者进入管理页再二次确认撤销后，网页、公开 API 与封面均返回 404，数据库中的灵石、丹药与原始炼炉记录完整不变。</p>
 <div class="nav"><a href="https://star8592.github.io/DanDao-Web-Preview/w143/">观看十秒真实开炉视频</a><a class="secondary" href="https://github.com/star8592/DanDao/pull/144">查看 W144 GitHub 实测记录</a><a class="secondary" href="https://dandao.playmoru.com/">正式游戏首页</a></div>
