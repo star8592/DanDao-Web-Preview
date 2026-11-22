@@ -1,0 +1,79 @@
+<!doctype html><html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,follow">
+<meta name="description" content="《丹道》W148 同一枚经过生产数据库核验的真丹，在云端沙箱WebGL与Z890 RTX5070Ti上的真实3D渲染A/B，逐像素质量和分段耗时对照。">
+<meta property="og:title" content="丹道 W148 · 同一枚真丹，GPU加速19.5倍">
+<meta property="og:description" content="真正生产原丹，1200×630三维图像，云端WebGL17.32秒与RTX5070Ti 0.89秒，中心丹体平均颜色误差0.33/255。">
+<meta property="og:image" content="https://star8592.github.io/DanDao-Web-Preview/w148-gpu/same-pill-z890-rtx5070ti.png">
+<title>丹道 W148 GPU A/B｜原丹3D渲染性能实验</title>
+<style>
+*{box-sizing:border-box}
+html{color-scheme:dark}body{margin:0;background:radial-gradient(ellipse at 50% -8%,#2a4436 0,#0e2018 48%,#08130f);color:#ebdfc7;font:14px/1.8 system-ui,-apple-system,'Noto Sans SC',sans-serif}
+main{max-width:1240px;margin:auto;padding:26px clamp(14px,3vw,38px) 65px}
+header{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #aa946d5b;padding-bottom:20px}
+header a{color:#d9c095;text-decoration:none;font-size:13px}
+.logo{letter-spacing:.22em;font:30px/1.2 Georgia,'Noto Serif CJK SC',serif}
+.hero{padding:51px 0 30px}
+.kicker{color:#c6ad7c;font-size:12px;letter-spacing:.2em}
+h1{font:400 clamp(29px,4.8vw,57px)/1.25 'Noto Serif CJK SC','Songti SC',Georgia,serif;margin:14px 0}
+.sub{max-width:930px;color:#bfd0c0;line-height:1.95}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;margin-top:32px}
+.stat{border-top:1px solid #ae9b7178;padding-top:16px}
+.stat strong{display:block;font:38px/1.3 Georgia,serif;color:#f0ce94}
+.stat span{color:#a9bcae;font-size:12px}
+.notice{border-left:2px solid #bb9f68;background:#1c3428ba;padding:13px 18px;color:#d3c5a9;margin:24px 0 33px;font-size:13px}
+.figure-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+figure{margin:0;border:1px solid #8b815d85;border-radius:12px;overflow:hidden;background:#182e22}
+figure img{display:block;width:100%;height:auto}
+figcaption{padding:15px 19px 20px;line-height:1.8;color:#c2cebb}
+figcaption strong{display:block;color:#f1d4a4;font:23px/1.4 'Noto Serif CJK SC',serif;margin-bottom:8px}
+h2{font:400 29px 'Noto Serif CJK SC',serif;color:#f0d4a5;margin:47px 0 20px}
+.performance{padding:22px 24px;border:1px solid #98805a88;border-radius:12px;background:#142920}
+.phase{display:grid;grid-template-columns:150px 1fr 105px;gap:15px;align-items:center;margin:17px 0}
+.phase label{font-size:13px;color:#d2c6aa}
+.track{height:16px;border-radius:12px;overflow:hidden;background:#294334}
+.track span{display:block;height:100%;border-radius:12px;background:linear-gradient(90deg,#d2ad75,#eacb88)}
+.track .green{background:linear-gradient(90deg,#7dba97,#b3d7a6)}
+.phase b{text-align:right;font-variant-numeric:tabular-nums}
+.smallnote{color:#adbdaf;font-size:12px;line-height:1.9}
+.detail{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.detail p{color:#b6c8bb;margin:0}
+.links a{display:inline-block;border:1px solid #bd9d63;padding:10px 17px;border-radius:8px;color:#e7d5b3;text-decoration:none;margin:18px 12px 0 0}
+footer{border-top:1px solid #ac94665a;margin-top:55px;padding-top:20px;font-size:12px;color:#9ead9f}
+@media(max-width:790px){.figure-grid,.detail{grid-template-columns:1fr}.stats{gap:8px}.stat strong{font-size:29px}.phase{grid-template-columns:90px 1fr 80px;gap:8px}.performance{padding:16px 13px}.hero{padding:35px 0 22px}}
+</style>
+</head><body><main>
+<header><a class="logo" href="https://dandao.playmoru.com/">丹 道</a><a href="https://star8592.github.io/DanDao-Web-Preview/w147/">上一阶段：无损材质优化</a></header>
+<section class="hero">
+<div class="kicker">W148 · REAL PRODUCTION PILL · GPU VS SANDBOX SOFTWARE WEBGL</div>
+<h1>同一枚真丹。<br>不换画面，只换渲染的算力。</h1>
+<p class="sub">这两张不是模拟图。它们从正式《丹道》PostgreSQL签发、已经自然八刻炼成的同一枚上品凝元丹读取真实外观种子，分别由生产机沙箱Chrome软件WebGL和Z890真正RTX5070Ti生成。测试完成后作者已撤销临时丹鉴，经济账本保持不变。</p>
+<div class="stats">
+<div class="stat"><strong>19.5×</strong><span>GPU的真实WebGL成像速度比</span></div>
+<div class="stat"><strong>1.10 /255</strong><span>两张图像RGB全图逐通道平均差异</span></div>
+<div class="stat"><strong>0.94%</strong><span>任意颜色通道差异超过20的像素比例</span></div>
+</div>
+</section>
+<div class="notice">工程边界：云端已实际启用的是匿名分段计时，Z890 GPU图片只是同一原丹的受控A/B测量，并未启用跨设备生产自动渲染。正式W146主游戏保持不变，云端仍有安全沙箱CPU回退。两个渲染器采用不同光栅实现，PNG字节不完全相同。</div>
+<section class="figure-grid">
+<figure><img src="same-pill-cloud-sandbox.png" width="1200" height="630" alt="正式生产服务器独立Chrome强沙箱从服务器原丹凭证生成的真实三维凝元丹封面">
+<figcaption><strong>01 · 正式云端沙箱渲染</strong>Chrome 158 · 2 vCPU、虚拟VGA、无现代加速GPU · Namespace/Secomp-BPF安全沙箱 · 三维WebGL成像实测17.32秒 · 原始PNG 420032字节。</figcaption></figure>
+<figure><img src="same-pill-z890-rtx5070ti.png" width="1200" height="630" alt="使用Z890 NVIDIA RTX5070Ti对同一正式数据库真丹独立渲染的1200乘630三维原丹封面">
+<figcaption><strong>02 · Z890 真正 RTX 5070 Ti</strong>Chrome ANGLE OpenGL · WebGL_debug_renderer_info确证NVIDIA · 三维WebGL成像实测0.89秒 · 原始PNG 389113字节。</figcaption></figure>
+</section>
+<section><h2>真正测出来的耗时，而不是估计</h2>
+<div class="performance">
+<div class="phase"><label>生产 WebGL</label><div class="track"><span style="width:100%"></span></div><b>17.32 秒</b></div>
+<div class="phase"><label>Z890 GPU WebGL</label><div class="track"><span class="green" style="width:5.13%"></span></div><b>0.89 秒</b></div>
+<div class="smallnote">只比较相同真实Three.js场景的WebGL就绪阶段。云端完整浏览器执行23.65秒；Z890浏览器启动、跨网络加载正式网页、绘制、PNG编码合计5.39秒，其中导航占4.19秒。计时均为本次独立真实样本，不承诺固定性能。</div>
+</div>
+</section>
+<section><h2>相同原丹，画面到底差多少？</h2>
+<div class="detail">
+<p>逐像素采用RGB三通道绝对差，完整1200×630平均约1.097/255；中心丹丸350×500区域仅0.327/255。两者均是服务器真丹所决定的几何、颜色、品阶及药气效果，不通过删掉丹皮细节来换帧率。</p>
+<p>允许不同GPU/CPU驱动产生轻微抗锯齿、着色和字体边缘差异。真正的生产跨设备工作器还需做授权任务签名、PNG校验、撤销原子性验证和离线回退。只有这些都完成后才会自动启用。</p>
+</div>
+<div class="links"><a href="https://github.com/star8592/DanDao/pull/152">查看代码、原始回执和安全验收</a><a href="https://star8592.github.io/DanDao-Web-Preview/w147/">查看 W147 无损材质优化</a></div>
+</section>
+<footer>W148 · 2026-11-23 · 所有图片为真实正式服务器已核验原丹的实机截图。QA分享已撤销，当前不代表第三方社交平台已自动发帖或正式GPU渲染服务已经启用。</footer>
+</main></body></html>
