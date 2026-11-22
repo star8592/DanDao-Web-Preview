@@ -1,11 +1,13 @@
-# DanDao W145 / Catchlight browser experiment
+# DanDao W145 / Original Elder 2.5D model
 
-This isolated technical proof of concept is **not** the finished original DanDao elder.
+Status: original elder **real Catchlight .clm model**, independently previewed; not integrated into the main game.
 
-- Runtime: real Catchlight WebAssembly + original 2.5D CLM sample model (lan.clm).
-- Interactions: idle, nod, talking mouth, surprise, motion on/off.
-- Upstream: hyperlogue/catchlight at aeaeca1. MIT OR Apache-2.0; see legal notices.
-- Example title art and Lan model remain upstream samples, not a DanDao-owned NPC.
-- The original DanDao elder portrait was separately generated. See-through decomposition and binding are pending.
-- No production game route, state, or economy is modified.
-- Real browser QA: qa/report.json and screenshots (1440px desktop, 390px mobile).
+- Based on the separately AI-generated original xianxia elder portrait.
+- 14 semantic hierarchy nodes and 13 animatable parameters; mesh/rig authored by the Catchlight Python Builder.
+- 550×503 original source retained; resulting model ~3.56 MB.
+- Bound blink, eyebrows, mouth cavity, nod, yaw/pitch/roll, beard and front hair motion.
+- Layer split used deterministic, hand-authored polygon mattes plus eye/mouth skin fill, **not See-through AI inference**.
+- Actual desktop and mobile Chrome canvas captures are at qa/, and report.json includes viewport/errors.
+- Main game, economy, save data and existing W branches are untouched.
+- Upstream: hyperlogue/catchlight @ aeaeca12013e230de3dbd733e85901ba698c2afe.
+- Third-party licensing remains in legal/.
