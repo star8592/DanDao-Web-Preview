@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>丹道 · Growth Studio W162 实机看板验收</title>
+<style>
+:root{color-scheme:dark}
+*{box-sizing:border-box}body{margin:0;background:#111c19;color:#f4eee1;font:16px/1.65 system-ui,sans-serif}.page{max-width:1160px;margin:auto;padding:32px 20px 70px}
+h1{font-size:clamp(28px,4vw,46px);line-height:1.2;margin:10px 0}h2{font-size:21px;margin:9px 0}p{color:#c0cfc3}a{color:#bedca6}
+mark{color:#e5dfbb;background:#33453a;padding:4px 10px;border-radius:18px}
+.grid{display:grid;grid-template-columns:2.1fr 1fr;gap:18px}.card{background:#1c2927;padding:16px;border-radius:16px;border:1px solid #3d5144}
+img{display:block;max-width:100%;width:100%;height:auto;border-radius:8px;background:#132521}
+.label{font-size:13px;color:#9bbfa9;letter-spacing:.13em;text-transform:uppercase}
+.note{border-left:3px solid #8fbc99;padding-left:13px}
+nav{display:flex;gap:16px;flex-wrap:wrap;margin-top:12px}
+@media(max-width:730px){.grid{grid-template-columns:1fr}.page{padding:18px 12px}.card{padding:10px}}
+</style>
+</head>
+<body><main class="page">
+<div class="label">DanDao · The Way of Alchemy · W162 QA</div>
+<h1>Growth Studio：自建海外发布系统</h1>
+<p><mark>真实 Chrome 截图</mark> <mark>代码已提交</mark> <mark>实际平台发布尚未启用</mark></p>
+<p>这不是设计概念图。下面两张图片由独立 PostgreSQL 测试数据库上的真实自建发布看板，在 Z890 Chrome 390×844 与 1440×900 视口内取得。账号为零、帖子为零，素材库两条来自真实 W143 游戏录像。</p>
+<section class="grid">
+<div class="card"><h2>桌面后台 · 1440 px</h2><img src="w162-dashboard-1440.png" alt="W162 Growth Studio 1440px desktop Chrome screenshot"></div>
+<div class="card"><h2>手机后台 · 390 px</h2><img src="w162-dashboard-390.png" alt="W162 Growth Studio 390px Chrome mobile screenshot"></div>
+</section>
+<p class="note">当前截图仅为可公开的<strong>静态 QA 证据</strong>，不是可操作的登录/发布后台。实际数据库和 OAuth 管理口仅监听 Z890 127.0.0.1:18863；绝不公开访问令牌。接入专用品牌社交账号和官方 API 应用授权后，才具备发帖条件。</p>
+<nav>
+<a href="https://github.com/star8592/DanDao/pull/177">W162 源码与验收 PR</a>
+<a href="https://star8592.github.io/DanDao-Web-Preview/global/dd001/">DD001 真实游戏视频</a>
+<a href="https://dandao.playmoru.com/">丹道游戏</a>
+<a href="sha256.txt">截图 SHA-256</a>
+</nav>
+</main></body></html>
