@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="DanDao W166 server-verified alchemy event attribution QA evidence; not live user analytics.">
+<title>丹道 · W166 两炉真实事务归因验收</title>
+<style>
+:root{color-scheme:dark;--bg:#0b1511;--surface:#14251d;--line:#385845;--ink:#e6eee2;--muted:#a9bbaa;--gold:#ddc99b;--green:#a1c6a1}
+*{box-sizing:border-box}
+body{background:radial-gradient(ellipse at 65% -20%,#204c32,transparent 50%),var(--bg);
+ color:var(--ink);margin:0;font:15px/1.65 system-ui,-apple-system,Segoe UI,sans-serif}
+main{max-width:1090px;margin:0 auto;padding:24px 18px 62px}
+a{color:#cce2b6;text-underline-offset:4px}
+h1{font:500 clamp(28px,4.4vw,47px)/1.25 ui-serif,"Noto Serif SC",serif;margin:10px 0 15px}
+h2{font:600 21px/1.3 ui-serif,"Noto Serif SC",serif;margin:0 0 13px}
+h3{font-size:16px;margin:10px 0}p{color:var(--muted);margin:10px 0}
+.eyebrow{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.info{display:flex;gap:8px;flex-wrap:wrap;margin:13px 0 20px}
+.tag{display:inline-block;font-size:12px;border:1px solid #64826a;color:#dfebd5;border-radius:30px;padding:3px 10px}
+.card{background:rgba(20,37,29,.9);border:1px solid var(--line);border-radius:13px;padding:19px}
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}
+.metric{font-size:35px;font-weight:650;line-height:1.2;color:var(--gold);font-variant-numeric:tabular-nums}
+.label{font-size:13px;color:var(--muted)}
+.section{margin-top:24px}
+.grid{display:grid;grid-template-columns:1.25fr .85fr;gap:15px}
+.small{font-size:12px;color:var(--muted)}
+.row{display:grid;grid-template-columns:230px minmax(0,1fr) 35px;gap:14px;align-items:center;margin:16px 0}
+.track{background:#263d30;height:11px;border-radius:50px;overflow:hidden}
+.fill{background:linear-gradient(90deg,#75ac91,#d6c18f);height:100%;width:0;border-radius:50px}
+.amount{text-align:right;font-variant-numeric:tabular-nums;font-weight:700}
+.list{margin:0;padding-left:20px;color:#c8d2c8}.list li{padding:5px 0}
+.note{margin-top:25px;border-left:3px solid var(--gold);background:#232b22;padding:14px 18px;color:#e1dfcf;border-radius:5px}
+table{border-collapse:collapse;width:100%;min-width:640px}
+th,td{padding:9px;text-align:left;border-bottom:1px solid #35513d;font-size:13px}
+th{color:var(--gold)}.scroller{overflow-x:auto}
+footer{margin-top:24px;display:flex;gap:17px;flex-wrap:wrap}
+@media(max-width:720px){main{padding:18px 12px 45px}.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.grid{grid-template-columns:1fr}.card{padding:13px}.metric{font-size:29px}.row{grid-template-columns:145px minmax(0,1fr) 24px;gap:8px;font-size:12px}}
+</style>
+</head>
+<body><main>
+<div class="eyebrow">DanDao / Growth Studio / W166</div>
+<h1>从推广来源，到一炉真正炼成</h1>
+<p>这份证据来自《丹道》真实游戏服务器 API + 独立 PostgreSQL：两炉炼丹交易确实结算、由匿名日报汇总并签名导入运营数据库。页面展示的是<strong>隔离测试数据</strong>，不是线上玩家、社交推广实绩。</p>
+<div class="info"><span class="tag">真实 PostgreSQL 事务</span><span class="tag">签名导入</span><span class="tag">重复操作去重</span><span class="tag">不记录访客身份</span></div>
+<section class="kpis">
+ <div class="card"><div class="metric" id="start">—</div><div class="label">服务器确认开炉预留</div></div>
+ <div class="card"><div class="metric" id="settled">—</div><div class="label">服务器确认炼丹结算</div></div>
+ <div class="card"><div class="metric" id="first">—</div><div class="label">历史第一炉结算</div></div>
+ <div class="card"><div class="metric" id="second">—</div><div class="label">历史第二炉结算</div></div>
+</section>
+<div class="grid section">
+ <section class="card"><h2>经 PostgreSQL 提交的真实动作</h2><div id="bars" aria-label="按事件汇总的真实QA统计">读取匿名统计中……</div></section>
+ <section class="card"><h2>什么被统计，什么没有？</h2>
+  <ul class="list">
+    <li>确认药材扣仓，才记录开炉预留。</li>
+    <li>开炉结果真实写入服务器账本，才记录炼丹结算；废丹不算有效出丹。</li>
+    <li>同一操作编号重复发起，不增加汇总。</li>
+    <li>浏览器的来源标签是自报，不能证明独立用户或推荐人身份。</li>
+    <li>没有写入玩家ID、IP、设备标识或追踪Cookie。</li>
+  </ul>
+ </section>
+</div>
+<section class="card section"><h2>可审计的匿名数据</h2>
+ <p class="small">从独立 Growth Studio QA PostgreSQL 导出，数据包含UTC日期、来源、活动、创意、事件种类及次数；不公开私有HMAC密钥或可被重放的签名。</p>
+ <div class="scroller"><table><thead><tr><th>UTC日</th><th>来源</th><th>活动</th><th>创意</th><th>事件</th><th>次</th></tr></thead><tbody id="data"><tr><td colspan="6">正在读取……</td></tr></tbody></table></div>
+</section>
+<div class="note"><strong>这是开发验收，不是增长成绩。</strong> 本轮的2次炼丹来自隔离QA玩家，QA测试结束后玩家记录已清理。游戏生产数据库的统计开关仍关闭，独立VPS和真实X/YouTube OAuth尚未上线。不能把短链请求数与此表相除当成转化率。</div>
+<footer>
+<a href="https://github.com/star8592/DanDao/pull/182">W166 游戏真事务代码 PR #182</a>
+<a href="https://github.com/star8592/DanDao/pull/183">W166 Studio 签名导入 PR #183</a>
+<a href="./report.json">公开匿名数据</a>
+<a href="https://star8592.github.io/DanDao-Web-Preview/global/studio-w164/">真实游戏竖屏视频</a>
+<a href="https://dandao.playmoru.com/">《丹道》正式入口</a>
+</footer>
+</main>
+<script>
+const names={
+ practice_brew_reserved:'实际开炉预留',
+ second_brew_reserve_after_one_settlement:'首炉后再次开炉',
+ practice_brew_settled:'普通炼丹实际结算',
+ first_practice_brew_settled:'历史第一炉完成',
+ second_practice_brew_settled:'历史第二炉完成',
+ first_practice_pill_awarded:'第一炉出丹',
+ second_practice_pill_awarded:'第二炉出丹'
+};
+function number(rows,event){return rows.filter(r=>r.event===event).reduce((n,r)=>n+Number(r.count),0);}
+fetch('report.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('report unavailable');return r.json()})
+.then(data=>{
+ if(data.schema!=='dandao-growth-funnel-qa-public-v1'||!Array.isArray(data.rows))throw Error('unknown data schema');
+ const rows=data.rows;
+ for(const pair of [['start','practice_brew_reserved'],['settled','practice_brew_settled'],
+   ['first','first_practice_brew_settled'],['second','second_practice_brew_settled']]){
+   document.getElementById(pair[0]).textContent=number(rows,pair[1]).toLocaleString('zh-CN');
+ }
+ const max=Math.max(1,...rows.map(r=>Number(r.count)));
+ const bars=document.getElementById('bars');bars.replaceChildren();
+ for(const row of rows){
+  const el=document.createElement('div');el.className='row';
+  const title=document.createElement('span');title.textContent=names[row.event]||row.event;
+  const track=document.createElement('div');track.className='track';
+  const fill=document.createElement('div');fill.className='fill';
+  fill.style.width=(Number(row.count)/max*100)+'%';track.append(fill);
+  const amount=document.createElement('span');amount.className='amount';amount.textContent=row.count;
+  el.append(title,track,amount);bars.append(el);
+ }
+ const body=document.getElementById('data');body.replaceChildren();
+ for(const row of rows){
+  const tr=document.createElement('tr');
+  for(const value of [row.day,row.platform,row.campaign,row.creative,names[row.event]||row.event,row.count]){
+   const td=document.createElement('td');td.textContent=value;tr.append(td);
+  }
+  body.append(tr);
+ }
+}).catch(()=>{
+ document.getElementById('bars').textContent='匿名报告暂时不可读。';
+ document.getElementById('data').textContent='数据读取失败。';
+});
+</script>
+</body></html>
