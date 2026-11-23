@@ -1,0 +1,48 @@
+{
+  "desktop": {
+    "status": 200,
+    "canvasCount": 1,
+    "autoReplayChecked": true,
+    "first": {
+      "gesture": "sequence",
+      "phase": "预备接丹"
+    },
+    "second": {
+      "gesture": "sequence",
+      "phase": "收丹观察"
+    },
+    "third": {
+      "gesture": "sequence",
+      "phase": "察觉来客"
+    },
+    "fourth": {
+      "gesture": "sequence",
+      "phase": "掌心承接"
+    },
+    "scrollWidth": 1440,
+    "errors": []
+  },
+  "mobile": {
+    "status": 200,
+    "canvasCount": 1,
+    "autoReplayChecked": true,
+    "first": {
+      "gesture": "sequence",
+      "phase": "预备接丹"
+    },
+    "second": {
+      "gesture": "sequence",
+      "phase": "收丹观察"
+    },
+    "third": {
+      "gesture": "sequence",
+      "phase": "察觉来客"
+    },
+    "fourth": {
+      "gesture": "sequence",
+      "phase": "掌心承接"
+    },
+    "scrollWidth": 390,
+    "errors": []
+  }
+}
