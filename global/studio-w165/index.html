@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>丹道 Growth Studio W165｜独立运行与推广归因真实验收</title>
+<style>
+:root{color-scheme:dark}*{box-sizing:border-box}
+body{margin:0;background:#101c16;color:#edf5e9;font:15px/1.65 system-ui,-apple-system,sans-serif}
+main{max-width:1000px;padding:26px 16px 65px;margin:auto}
+h1{font-size:clamp(28px,4vw,44px);line-height:1.2;margin:10px 0}h2{font-size:21px}
+p{color:#bdcec1}a{color:#b9e4b2}
+.card{background:#1b2d24;border:1px solid #42614d;border-radius:15px;padding:16px;margin-top:16px}
+img{display:block;width:100%;max-width:440px;height:auto;border-radius:10px}
+.bubbles{display:flex;gap:9px;flex-wrap:wrap;margin:14px 0}
+.pill{padding:5px 10px;border:1px solid #63856d;border-radius:30px;font-size:12px;color:#d2e9cd}
+.note{padding:14px 18px;border-left:4px solid #93c09d;background:#25392c;border-radius:5px}
+ul{padding-left:21px}li{margin:9px 0}
+</style>
+</head>
+<body><main>
+<p>DanDao · The Way of Alchemy · W165 QA</p>
+<h1>Growth Studio 不依赖游戏源码运行的验收</h1>
+<div class="bubbles"><span class="pill">独立源码包</span><span class="pill">真实 PostgreSQL</span><span class="pill">25/25 自动测试通过</span><span class="pill">真 Chrome 手机验收</span></div>
+<div class="card">
+<h2>实机截图 · 390×844</h2>
+<a href="w165-standalone-console-390.png"><img src="w165-standalone-console-390.png" alt="W165 自建后台在隔离运行目录的真 Chrome 手机截图"></a>
+<p>截取自真实运行中的管理台，独立数据库里导入了真实 WebGL 炼丹录像，也显示经审核的推广短链原始访问次数。未使用伪造的观看量或注册数字。</p>
+</div>
+<section class="card">
+<h2>这轮真正完成的工程</h2>
+<ul>
+<li>让视频以 SHA-256 校验复制到独立私有素材卷，文件权限0600，原始游戏素材和部署服务彻底解耦。</li>
+<li>独立部署包在全新目录实际运行，并从新增的 PostgreSQL 测试数据库加载媒体和推广记录。</li>
+<li>独立推广跳转服务可以把 X、YouTube、TikTok 来源带到正式游戏，但目前仅统计匿名的原始HTTP访问请求。</li>
+<li>修复 X 视频处理状态查询参数错误，新增 pending → in_progress → succeeded 模拟API回归。</li>
+</ul>
+<p><strong>没有宣称：</strong>没有部署到生产 VPS，没有连上真正的 X/YouTube/TikTok OAuth 账号，没有产生真实公开社交帖子；还未实现第一炉、第二炉用户转化埋点。</p>
+</section>
+<div class="note">本页是只读公开 QA 截图，不是可登入的后台，也不是已经运行在公网上的短链服务。账号授权和正式发布必须在私有运营后台完成。</div>
+<p><a href="https://github.com/star8592/DanDao/pull/181">W165 源码与验收 PR #181</a> · <a href="https://star8592.github.io/DanDao-Web-Preview/global/studio-w164/">W164 真实游戏视频</a> · <a href="https://dandao.playmoru.com/">正式游戏</a> · <a href="sha256.txt">本页截图 SHA-256</a></p>
+</main></body></html>
