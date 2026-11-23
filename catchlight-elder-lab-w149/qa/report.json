@@ -1,0 +1,90 @@
+{
+  "desktop": {
+    "status": 200,
+    "state": {
+      "pageWidth": 1440,
+      "viewportWidth": 1440,
+      "canvases": 1,
+      "instruments": "模型参数 18 项骨骼参数 12 项动画循环 60/秒（非GPU帧率）",
+      "modelVisible": true
+    },
+    "samples": [
+      {
+        "second": 0.7,
+        "gesture": "sequence",
+        "phase": "接丹"
+      },
+      {
+        "second": 1.7,
+        "gesture": "sequence",
+        "phase": "收丹"
+      },
+      {
+        "second": 3.7,
+        "gesture": "sequence",
+        "phase": "辨纹"
+      },
+      {
+        "second": 6.9,
+        "gesture": "sequence",
+        "phase": "颔首"
+      },
+      {
+        "second": 9.1,
+        "gesture": "sequence",
+        "phase": "收势"
+      },
+      {
+        "second": 11.4,
+        "gesture": "rest",
+        "phase": "静候"
+      }
+    ],
+    "errors": [],
+    "changed_pixels_pct_vs_idle_at_6_9s": 7.26
+  },
+  "mobile": {
+    "status": 200,
+    "state": {
+      "pageWidth": 390,
+      "viewportWidth": 390,
+      "canvases": 1,
+      "instruments": "模型参数 18 项骨骼参数 12 项动画循环 60/秒（非GPU帧率）",
+      "modelVisible": true
+    },
+    "samples": [
+      {
+        "second": 0.7,
+        "gesture": "sequence",
+        "phase": "接丹"
+      },
+      {
+        "second": 1.7,
+        "gesture": "sequence",
+        "phase": "收丹"
+      },
+      {
+        "second": 3.7,
+        "gesture": "sequence",
+        "phase": "辨纹"
+      },
+      {
+        "second": 6.9,
+        "gesture": "sequence",
+        "phase": "颔首"
+      },
+      {
+        "second": 9.1,
+        "gesture": "sequence",
+        "phase": "收势"
+      },
+      {
+        "second": 11.4,
+        "gesture": "rest",
+        "phase": "静候"
+      }
+    ],
+    "errors": [],
+    "changed_pixels_pct_vs_idle_at_6_9s": 13.61
+  }
+}
