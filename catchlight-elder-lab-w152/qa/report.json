@@ -1,0 +1,94 @@
+{
+  "desktop": {
+    "status": 200,
+    "canvasCount": 1,
+    "initialMode": "152",
+    "instrument": "模型参数 16 项\n骨骼参数 10 项\n动画循环 60/秒（非GPU帧率）",
+    "stages": [
+      {
+        "t": 1.2,
+        "phase": "察觉来客",
+        "gesture": "sequence"
+      },
+      {
+        "t": 2.8,
+        "phase": "掌心承接",
+        "gesture": "sequence"
+      },
+      {
+        "t": 5.4,
+        "phase": "细辨丹纹",
+        "gesture": "sequence"
+      },
+      {
+        "t": 8.6,
+        "phase": "示丹定论",
+        "gesture": "sequence"
+      },
+      {
+        "t": 10.6,
+        "phase": "评语落定",
+        "gesture": "sequence"
+      },
+      {
+        "t": 14.6,
+        "phase": "静候",
+        "gesture": "rest"
+      }
+    ],
+    "oldMode": "151",
+    "oldPhase": "端详",
+    "newMode": "152",
+    "scrollWidth": 1440,
+    "viewportWidth": 1440,
+    "errors": [],
+    "ab_image_pixels_changed_gt10_pct": 3.54,
+    "ab_image_mean_abs_rgb": 1.436
+  },
+  "mobile": {
+    "status": 200,
+    "canvasCount": 1,
+    "initialMode": "152",
+    "instrument": "模型参数 16 项\n骨骼参数 10 项\n动画循环 60/秒（非GPU帧率）",
+    "stages": [
+      {
+        "t": 1.2,
+        "phase": "察觉来客",
+        "gesture": "sequence"
+      },
+      {
+        "t": 2.8,
+        "phase": "掌心承接",
+        "gesture": "sequence"
+      },
+      {
+        "t": 5.4,
+        "phase": "细辨丹纹",
+        "gesture": "sequence"
+      },
+      {
+        "t": 8.6,
+        "phase": "示丹定论",
+        "gesture": "sequence"
+      },
+      {
+        "t": 10.6,
+        "phase": "评语落定",
+        "gesture": "sequence"
+      },
+      {
+        "t": 14.6,
+        "phase": "静候",
+        "gesture": "rest"
+      }
+    ],
+    "oldMode": "151",
+    "oldPhase": "端详",
+    "newMode": "152",
+    "scrollWidth": 390,
+    "viewportWidth": 390,
+    "errors": [],
+    "ab_image_pixels_changed_gt10_pct": 7.34,
+    "ab_image_mean_abs_rgb": 2.804
+  }
+}
