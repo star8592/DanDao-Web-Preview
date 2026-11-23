@@ -1,0 +1,30 @@
+{
+  "desktop": {
+    "state": {
+      "pageWidth": 1440,
+      "viewportWidth": 1440,
+      "canvasCount": 1,
+      "canvasDims": [
+        842,
+        720
+      ],
+      "instruments": "模型参数 10 项骨骼参数 4 项循环 60/秒（非GPU帧率）",
+      "missing": false
+    },
+    "errors": []
+  },
+  "mobile": {
+    "state": {
+      "pageWidth": 390,
+      "viewportWidth": 390,
+      "canvasCount": 1,
+      "canvasDims": [
+        362,
+        560
+      ],
+      "instruments": "模型参数 10 项骨骼参数 4 项循环 60/秒（非GPU帧率）",
+      "missing": false
+    },
+    "errors": []
+  }
+}

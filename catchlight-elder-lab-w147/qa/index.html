@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>W147｜长老全身骨骼实验 · 实机证据</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#121d1c;color:#eee2c6;font:15px/1.8 system-ui,Arial,sans-serif}main{max-width:1120px;margin:auto;padding:20px 22px 80px}h1{font-size:clamp(25px,4vw,38px);font-weight:600;line-height:1.4}h2{color:#e4c18d;font-size:21px}p{color:#b7c1b9}a{color:#edc891}video,img{max-width:100%;height:auto;border:1px solid #84724f60;background:#172322}video{display:block;width:100%;margin:10px 0}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.grid figure{margin:0}figcaption{color:#c6bc9f;font-size:12px;padding:5px 0}.top{display:flex;flex-wrap:wrap;gap:10px 25px}.warning{border-left:3px solid #bc9561;padding:11px 20px;background:#2b2920;color:#d9bc94}.note{color:#a9b4ac}section{border-top:1px solid #82704d70;margin-top:26px;padding-top:14px}@media(max-width:660px){.grid{grid-template-columns:1fr}main{padding:14px}}
+</style></head><body><main>
+<p class="top"><a href="../">打开 W147 真实可交互角色</a><a href="../../catchlight-elder-lab/qa-w146/">查看 W146 旧胸像</a><a href="report.json">原始浏览器 QA 报告</a><a href="https://hyperlogue.github.io/catchlight/">原作者 Catchlight 演示</a></p>
+<h1>《丹道》W147｜全身人物，真正的袖臂骨骼</h1>
+<p>新全身原画（1024×1536）经 See-through 自动分层、Catchlight 双节骨骼绑定。分别支持“接丹”“端详”“评丹”“回应”等实验动作。录制的是 Chrome 真实渲染画布，而非视频生成模型。</p>
+<div class="warning"><strong>视觉验收：尚未通过。</strong> 人物比例改善，手臂可以真正抬起，但手掌未独立绑定，袖口、肩肘连接与面部动作还不够自然。请以实际录像评价，不以参数数量代替效果。</div>
+<section><h2>实际浏览器视频</h2>
+<video controls playsinline preload="metadata" poster="desktop-idle.png"><source src="elder-actions-real-browser.webm" type="video/webm"></video>
+<p><a href="elder-actions-real-browser.gif">直接打开循环 GIF</a> · <a href="elder-actions-real-browser.webm">下载 WebM 实录</a></p></section>
+<section><h2>桌面端 1440×900 动作对照</h2><div class="grid">
+<figure><img src="desktop-idle.png" alt="静候"><figcaption>静候</figcaption></figure>
+<figure><img src="desktop-receive.png" alt="接丹"><figcaption>接丹（向胸前抬手）</figcaption></figure>
+<figure><img src="desktop-inspect.png" alt="端详"><figcaption>俯身端详</figcaption></figure>
+<figure><img src="desktop-present.png" alt="评丹"><figcaption>抬手评丹</figcaption></figure>
+</div></section>
+<section><h2>手机 390×844 动作对照</h2><div class="grid">
+<figure><img src="mobile-idle.png"><figcaption>静候</figcaption></figure>
+<figure><img src="mobile-receive.png"><figcaption>接丹</figcaption></figure>
+<figure><img src="mobile-inspect.png"><figcaption>端详</figcaption></figure>
+<figure><img src="mobile-present.png"><figcaption>评丹</figcaption></figure>
+</div></section>
+<section><p class="note">工程审计：本版 10 个参数，其中 4 个为两条袖臂的 spine 关节弯曲参数。浏览器自动测试没有报告 JS 错误和横向溢出；不代表 GPU FPS、材质自然度或完整动画质量通过。</p><p class="note">此页面属于 W147 独立实验。正式炼丹炉、丹方、经济、数据库与玩家存档未修改。</p></section>
+</main></body></html>
