@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>DanDao Growth Studio W163 · 可操作后台真机验收</title>
+<style>
+:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#0b1512;color:#eff4ea;font:15px/1.65 system-ui,-apple-system,sans-serif}
+.page{max-width:1160px;margin:auto;padding:30px 19px 65px}h1{font-size:clamp(27px,4vw,48px);margin:10px 0}h2{font-size:21px;margin:6px 0 10px}p{color:#c7d2ca}
+a{color:#baddab;text-decoration:underline;text-underline-offset:3px}.label{font-size:12px;letter-spacing:.17em;color:#b7c6bc;text-transform:uppercase}
+.notice{border-left:3px solid #a5c9a5;padding:10px 15px;background:#1b2d23;border-radius:4px;margin:22px 0}
+.grid{display:grid;grid-template-columns:1.8fr 1fr;gap:18px}.card{border:1px solid #355244;background:#17261f;border-radius:14px;padding:14px;overflow:hidden}
+img{display:block;width:100%;height:auto;border-radius:8px}nav{display:flex;flex-wrap:wrap;gap:19px;margin:25px 0}
+.small{font-size:13px}.pill{display:inline-block;padding:4px 10px;border:1px solid #658c6a;border-radius:100px;margin:3px;color:#cbe6ca}
+@media(max-width:760px){.grid{grid-template-columns:1fr}.page{padding:20px 12px 50px}.card{padding:10px}}
+</style>
+</head>
+<body><main class="page">
+<div class="label">DanDao · The Way of Alchemy · W163 Evidence</div>
+<h1>海外内容发布管理台</h1>
+<p>这不是概念 UI。以下来自独立 PostgreSQL 测试数据库和 Z890 真实 Chrome 的界面，测试中实际完成了登录、创建草稿、编辑、授权拦截、撤销与异常操作拒绝。</p>
+<div><span class="pill">21/21 自动化测试通过</span><span class="pill">真 Chrome 手机与桌面验收</span><span class="pill">尚无真实平台发帖</span></div>
+<section class="grid" style="margin-top:22px">
+ <div class="card"><h2>桌面 Web 控制台</h2><a href="w163-editorial-desktop-1440.png"><img src="w163-editorial-desktop-1440.png" alt="1440px 真 Chrome 已登录后台截图"></a><p class="small">真实运营数据区域、媒体库和已登记QA任务；绝非伪造观看数据。</p></div>
+ <div class="card"><h2>手机端操作台</h2><a href="w163-editorial-mobile-390.png"><img src="w163-editorial-mobile-390.png" alt="390px 手机尺寸 Chrome 后台截图"></a>
+ <h2 style="margin-top:18px">H.264 真正视频播放</h2><a href="w163-google-chrome-video-390.png"><img src="w163-google-chrome-video-390.png" alt="使用正式Google Chrome播放真实炉次视频的截图"></a></div>
+</section>
+<div class="notice"><strong>安全边界：</strong>本网页只展示静态、已经去除凭据的 QA 截图。真正可操作的控制台仅在 Z890 回环地址监听，管理员口令、OAuth 令牌及玩家资料不会在此公开。上传和社交平台真实发布尚未启动。</div>
+<nav>
+<a href="https://github.com/star8592/DanDao/pull/179">W163 实际源码与测试 PR</a>
+<a href="https://star8592.github.io/DanDao-Web-Preview/global/dd001/">DD001 真实游戏视频预览</a>
+<a href="https://dandao.playmoru.com/">《丹道》游戏入口</a>
+<a href="sha256.txt">验收截图 SHA-256</a>
+</nav>
+</main></body></html>
