@@ -1,0 +1,90 @@
+{
+  "desktop": {
+    "status": 200,
+    "state": {
+      "pageWidth": 1440,
+      "viewportWidth": 1440,
+      "canvases": 1,
+      "instruments": "\u6a21\u578b\u53c2\u6570 16 \u9879\u9aa8\u9abc\u53c2\u6570 10 \u9879\u52a8\u753b\u5faa\u73af 60/\u79d2\uff08\u975eGPU\u5e27\u7387\uff09",
+      "modelVisible": true
+    },
+    "samples": [
+      {
+        "second": 0.7,
+        "gesture": "sequence",
+        "phase": "\u63a5\u4e39"
+      },
+      {
+        "second": 1.7,
+        "gesture": "sequence",
+        "phase": "\u6536\u4e39"
+      },
+      {
+        "second": 3.7,
+        "gesture": "sequence",
+        "phase": "\u8fa8\u7eb9"
+      },
+      {
+        "second": 6.9,
+        "gesture": "sequence",
+        "phase": "\u9894\u9996"
+      },
+      {
+        "second": 9.1,
+        "gesture": "sequence",
+        "phase": "\u6536\u52bf"
+      },
+      {
+        "second": 11.4,
+        "gesture": "rest",
+        "phase": "\u9759\u5019"
+      }
+    ],
+    "errors": [],
+    "changed_pixels_pct_vs_idle_at_6_9s": 5.68
+  },
+  "mobile": {
+    "status": 200,
+    "state": {
+      "pageWidth": 390,
+      "viewportWidth": 390,
+      "canvases": 1,
+      "instruments": "\u6a21\u578b\u53c2\u6570 16 \u9879\u9aa8\u9abc\u53c2\u6570 10 \u9879\u52a8\u753b\u5faa\u73af 60/\u79d2\uff08\u975eGPU\u5e27\u7387\uff09",
+      "modelVisible": true
+    },
+    "samples": [
+      {
+        "second": 0.7,
+        "gesture": "sequence",
+        "phase": "\u63a5\u4e39"
+      },
+      {
+        "second": 1.7,
+        "gesture": "sequence",
+        "phase": "\u6536\u4e39"
+      },
+      {
+        "second": 3.7,
+        "gesture": "sequence",
+        "phase": "\u8fa8\u7eb9"
+      },
+      {
+        "second": 6.9,
+        "gesture": "sequence",
+        "phase": "\u9894\u9996"
+      },
+      {
+        "second": 9.1,
+        "gesture": "sequence",
+        "phase": "\u6536\u52bf"
+      },
+      {
+        "second": 11.4,
+        "gesture": "rest",
+        "phase": "\u9759\u5019"
+      }
+    ],
+    "errors": [],
+    "changed_pixels_pct_vs_idle_at_6_9s": 13.67
+  }
+}

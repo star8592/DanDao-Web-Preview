@@ -1,0 +1,16 @@
+{
+  "desktop": {
+    "status": 200,
+    "zoomButtonPressed": "true",
+    "phase": "颔首",
+    "errors": [],
+    "bodyScrollWidth": 1440
+  },
+  "mobile": {
+    "status": 200,
+    "zoomButtonPressed": "true",
+    "phase": "颔首",
+    "errors": [],
+    "bodyScrollWidth": 390
+  }
+}
