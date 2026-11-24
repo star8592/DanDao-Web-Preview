@@ -1,0 +1,22 @@
+{
+  "locale": "zh-CN",
+  "source": "real local gameplay; not production player data",
+  "reward": "凝元丹",
+  "grade": "上品",
+  "renderer": "ANGLE (NVIDIA, Vulkan 1.4.351 (NVIDIA NVIDIA GeForce RTX 5070 Ti (0x00002C05)), NVIDIA)",
+  "source_frames": 228,
+  "source_span_seconds": 9.922,
+  "source_sample_fps": 22.88,
+  "source_size": [
+    540,
+    960
+  ],
+  "output_size": [
+    1080,
+    1920
+  ],
+  "upscaled": true,
+  "voice": "Mandarin Kokoro zf_001 (shared for simplified/traditional; not Taiwan accent)",
+  "sha256": "38f4a8ff26b73c937311138a45c6c67e553ff16f2354ede60cc3c8cda98ed9aa",
+  "status": "QA_LANGUAGE_SAMPLE"
+}
