@@ -1,0 +1,26 @@
+{
+  "locale": "en",
+  "source": "real local gameplay; not production player data",
+  "reward": "Essence Gathering Pill",
+  "grade": "High grade",
+  "renderer": "ANGLE (NVIDIA, Vulkan 1.4.351 (NVIDIA NVIDIA GeForce RTX 5070 Ti (0x00002C05)), NVIDIA)",
+  "source_frames": 293,
+  "source_span_seconds": 9.905,
+  "source_sample_fps": 29.48,
+  "source_size": [
+    1080,
+    1920
+  ],
+  "renderer_size": {
+    "width": 1080,
+    "height": 1920
+  },
+  "output_size": [
+    1080,
+    1920
+  ],
+  "upscaled": false,
+  "voice": "English Kokoro af_heart",
+  "sha256": "bcf73911ccbd0be0267d6bca192c057edd96c276d595245098528a06bdd495c9",
+  "status": "TECHNICAL_CANDIDATE_REQUIRES_VISUAL_AND_RIGHTS_REVIEW"
+}
