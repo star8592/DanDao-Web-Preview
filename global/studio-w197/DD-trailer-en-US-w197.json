@@ -1,0 +1,62 @@
+{
+  "version": "W197",
+  "locale": "en-US",
+  "duration_seconds": 45.0,
+  "dimensions": [
+    1080,
+    1920
+  ],
+  "encoded_fps": 30,
+  "cfr_may_repeat_or_drop_source_frames": true,
+  "actual_gameplay_montage_multiple_brews": true,
+  "insight_server_confirmed": true,
+  "insight_mana_spent": 1,
+  "sources": [
+    {
+      "shot": "orbit",
+      "timeline_start": 0,
+      "duration": 6,
+      "source_sha256": "189e097ec4d766b5702387cf0deb3f0398db3836396a84b3e5f7be997709eb6a",
+      "audio_gain": 1
+    },
+    {
+      "shot": "fire",
+      "timeline_start": 13,
+      "duration": 7,
+      "source_sha256": "3b4356895f4246d7746c155f3f074b6bc2c308e1a5d74f0254578d570babb640",
+      "audio_gain": 9
+    },
+    {
+      "shot": "insight",
+      "timeline_start": 20,
+      "duration": 8,
+      "source_sha256": "d4c0d8569dc9ef5d729ed2f9ead1780f2ef0edd9b6d17fb85aadaf629c60a3fa",
+      "audio_gain": 9
+    },
+    {
+      "shot": "reveal",
+      "timeline_start": 28,
+      "duration": 10,
+      "source_sha256": "9e46513ec6d7834124ae59ce88307ea3543baaa81fc34b4acb69efc96baf7111",
+      "audio_gain": 2.62
+    },
+    {
+      "shot": "herbs",
+      "source_sha256": "919262c2ab50d8675b8082f3d0e03d33b090f3580629cb78e331f4c659994be6",
+      "source_start": 5.2,
+      "timeline_start": 6,
+      "duration": 7
+    },
+    {
+      "shot": "brand_card",
+      "duration": 7,
+      "timeline_start": 38
+    }
+  ],
+  "music": "new original 45-second synthesized score",
+  "music_sha256": "11d9c57afd84f4ace39d497c59d55b2c6b03e6a3caa5f4af52c43d98c0ae25f5",
+  "voice": "English Kokoro",
+  "source_audio_warning": "prior raw Opus packet warning; final decode clean",
+  "decode_check": "PASS",
+  "sha256": "726866ff69acad04b72b4a14b14924bfc4534d55f17c57a6b67706d4ef67df64"
+}
