@@ -1,0 +1,15 @@
+1
+00:00:00,450 --> 00:00:03,987
+Ancient alchemy begins with a single furnace.
+
+2
+00:00:05,000 --> 00:00:08,151
+Choose three herbs, and prepare your formula.
+
+3
+00:00:17,200 --> 00:00:20,787
+As the flame burns, the herbal essences gather.
+
+4
+00:00:29,000 --> 00:00:33,123
+A world within a furnace. Brew your first pill in Dan Dao.

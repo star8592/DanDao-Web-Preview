@@ -1,0 +1,60 @@
+{
+  "version": "W193",
+  "locale": "en",
+  "duration_seconds": 36.0,
+  "actual_gameplay": true,
+  "reward": "Essence Gathering Pill",
+  "grade": "High grade",
+  "source_sha256": "919262c2ab50d8675b8082f3d0e03d33b090f3580629cb78e331f4c659994be6",
+  "sha256": "e84e07692efc563eefedc049c32d1bcd5ec2380f785712119908c3b8a1c81071",
+  "shots": [
+    {
+      "source_start": 2.2,
+      "seconds": 3.0,
+      "label": "炉前静候",
+      "framing": "crop"
+    },
+    {
+      "source_start": 5.2,
+      "seconds": 8.0,
+      "label": "三味灵草",
+      "framing": "ui"
+    },
+    {
+      "source_start": 13.2,
+      "seconds": 6.0,
+      "label": "生火入炉",
+      "framing": "crop"
+    },
+    {
+      "source_start": 30.0,
+      "seconds": 5.0,
+      "label": "炉火特写",
+      "framing": "detail"
+    },
+    {
+      "source_start": 56.0,
+      "seconds": 7.0,
+      "label": "开炉见丹",
+      "framing": "crop"
+    },
+    {
+      "source_start": 63.0,
+      "seconds": 7.0,
+      "label": "丹成",
+      "framing": "pill"
+    }
+  ],
+  "video_size": [
+    1080,
+    1920
+  ],
+  "encoded_fps": 25,
+  "unique_render_fps_not_measured": true,
+  "original_music": true,
+  "narration": "English Kokoro",
+  "game_sfx": "Not captured in browser source; music and narration only",
+  "insight_included": false,
+  "review_status": "creative review",
+  "detail_crops_upscaled": true
+}

@@ -1,0 +1,60 @@
+{
+  "version": "W193",
+  "locale": "zh-TW",
+  "duration_seconds": 36.0,
+  "actual_gameplay": true,
+  "reward": "凝元丹",
+  "grade": "上品",
+  "source_sha256": "e3f0baed8dfa7a529edcb1fc06015d9ca565b8f0ea024e09fea460a695ede271",
+  "sha256": "5d1719652cebd294bfd03f452913be80077592d20d0f748017447f720ef1e292",
+  "shots": [
+    {
+      "source_start": 2.2,
+      "seconds": 3.0,
+      "label": "炉前静候",
+      "framing": "crop"
+    },
+    {
+      "source_start": 5.2,
+      "seconds": 8.0,
+      "label": "三味灵草",
+      "framing": "ui"
+    },
+    {
+      "source_start": 13.2,
+      "seconds": 6.0,
+      "label": "生火入炉",
+      "framing": "crop"
+    },
+    {
+      "source_start": 30.0,
+      "seconds": 5.0,
+      "label": "炉火特写",
+      "framing": "detail"
+    },
+    {
+      "source_start": 56.0,
+      "seconds": 7.0,
+      "label": "开炉见丹",
+      "framing": "crop"
+    },
+    {
+      "source_start": 63.0,
+      "seconds": 7.0,
+      "label": "丹成",
+      "framing": "pill"
+    }
+  ],
+  "video_size": [
+    1080,
+    1920
+  ],
+  "encoded_fps": 25,
+  "unique_render_fps_not_measured": true,
+  "original_music": true,
+  "narration": "Mandarin Kokoro",
+  "game_sfx": "Not captured in browser source; music and narration only",
+  "insight_included": false,
+  "review_status": "creative review",
+  "detail_crops_upscaled": true
+}
