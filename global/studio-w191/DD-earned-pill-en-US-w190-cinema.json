@@ -1,0 +1,30 @@
+{
+  "locale": "en",
+  "real_local_gameplay": true,
+  "reward": "Essence Gathering Pill",
+  "grade": "High grade",
+  "source_size": [
+    1080,
+    1920
+  ],
+  "upscaled": false,
+  "source_frames": 681,
+  "source_sample_fps": 28.44,
+  "output_frames": 681,
+  "source_span_seconds": 23.909,
+  "duration_seconds": 24,
+  "music": "Original procedural D pentatonic score; synthesized plucked string, flute and pad, no borrowed recordings",
+  "music_sha256": "06a78cfaeefb02231397bec7ec4927f15eeac0e9a6b9609684363a0224e5a7c5",
+  "original_furnace_sfx_mixed": true,
+  "voice": "English Kokoro",
+  "speech_speed": 0.9,
+  "speech_starts_seconds": [
+    1.4,
+    8.2,
+    18.0
+  ],
+  "sha256": "6e0afb8e1a608e7c98bbaf7c48800a6b10a08efc54c31279df212aa95b2c94cc",
+  "status": "CINEMATIC_REVIEW",
+  "timestamp_check": "PASS",
+  "decode_check": "PASS"
+}

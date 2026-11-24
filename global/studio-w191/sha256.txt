@@ -1,0 +1,4 @@
+6e0afb8e1a608e7c98bbaf7c48800a6b10a08efc54c31279df212aa95b2c94cc  DD-earned-pill-en-US-w190-cinema.mp4
+b5b847542cc2b040c1e8c63fd2c6c743c21174eba06446271c39728d8b53af4b  DD-earned-pill-zh-CN-w190-cinema.mp4
+2e5d9ccfe16827fb208896922d3877034179acd71b525369c0c82da681c60ea2  DD-earned-pill-zh-TW-w190-cinema.mp4
+60b73e811d138b50896a5c3653c1ebfbd81513e86ca7f500965ecf65afe24516  original-score.mp3
