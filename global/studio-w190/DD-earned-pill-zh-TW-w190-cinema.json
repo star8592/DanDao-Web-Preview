@@ -1,0 +1,28 @@
+{
+  "locale": "zh-TW",
+  "real_local_gameplay": true,
+  "reward": "凝元丹",
+  "grade": "上品",
+  "source_size": [
+    1080,
+    1920
+  ],
+  "upscaled": false,
+  "source_frames": 282,
+  "source_sample_fps": 11.76,
+  "output_frames": 282,
+  "source_span_seconds": 23.898,
+  "duration_seconds": 24,
+  "music": "Original procedural D pentatonic score; synthesized plucked string, flute and pad, no borrowed recordings",
+  "music_sha256": "06a78cfaeefb02231397bec7ec4927f15eeac0e9a6b9609684363a0224e5a7c5",
+  "original_furnace_sfx_mixed": true,
+  "voice": "Mandarin Kokoro; traditional edition uses shared Mandarin voice",
+  "speech_speed": 0.9,
+  "speech_starts_seconds": [
+    1.4,
+    8.2,
+    18.0
+  ],
+  "sha256": "7e69f494f9d44144350e0309e1a592338122f2f6e4f3debfe7d8c8dbcbdb7fa5",
+  "status": "PACING_AUDIO_PREVIEW_LOW_FPS"
+}
