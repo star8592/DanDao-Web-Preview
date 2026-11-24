@@ -1,0 +1,172 @@
+{
+  "version": "W195",
+  "locale": "zh-CN",
+  "footage_reused": "W194 actual UI-free 3D capture",
+  "source_audio_note": "source Opus packet-header warning in W194; decoded sound used with bounded gain; final MP4 verified",
+  "duration_seconds": 23,
+  "actual_gameplay": true,
+  "reward": "凝元丹",
+  "grade": "上品",
+  "native_capture": [
+    1080,
+    1920
+  ],
+  "camera": "separate Three.js camera; no cropping or zoom in post",
+  "shots": [
+    {
+      "name": "orbit",
+      "encoded_source_packets": 180,
+      "source_sample_fps": 29.92,
+      "camera_positions": [
+        {
+          "frame": 1,
+          "position": [
+            -1.9016208672753705,
+            2.6000000059996,
+            7.770703815560214
+          ],
+          "fov": 38.999999970002
+        },
+        {
+          "frame": 60,
+          "position": [
+            -0.6782470753739729,
+            2.651151023822932,
+            7.817178493957338
+          ],
+          "fov": 38.74424488088534
+        },
+        {
+          "frame": 120,
+          "position": [
+            1.5181792016085138,
+            2.7474177732055183,
+            7.40369278108231
+          ],
+          "fov": 38.26291113397241
+        },
+        {
+          "frame": 180,
+          "position": [
+            2.606741088338333,
+            2.799995525501749,
+            6.925684050422111
+          ],
+          "fov": 38.00002237249126
+        }
+      ],
+      "audio_rms": 0.0,
+      "game_audio_gain": 1.0,
+      "sha256": "189e097ec4d766b5702387cf0deb3f0398db3836396a84b3e5f7be997709eb6a"
+    },
+    {
+      "name": "fire",
+      "encoded_source_packets": 210,
+      "source_sample_fps": 29.94,
+      "camera_positions": [
+        {
+          "frame": 1,
+          "position": [
+            1.6549072301204957,
+            1.0800006581631545,
+            5.3498846655511825
+          ],
+          "fov": 38.999995886480285
+        },
+        {
+          "frame": 60,
+          "position": [
+            1.3731050962539144,
+            1.1114434444455936,
+            5.358073258439795
+          ],
+          "fov": 38.80347847221504
+        },
+        {
+          "frame": 120,
+          "position": [
+            0.7994701216486759,
+            1.176693601357513,
+            5.3288454509054555
+          ],
+          "fov": 38.395664991515545
+        },
+        {
+          "frame": 180,
+          "position": [
+            0.3376225983270162,
+            1.2309683974344023,
+            5.258930112387941
+          ],
+          "fov": 38.056447516034986
+        }
+      ],
+      "audio_rms": 0.000726,
+      "game_audio_gain": 12.0,
+      "sha256": "3b4356895f4246d7746c155f3f074b6bc2c308e1a5d74f0254578d570babb640"
+    },
+    {
+      "name": "reveal",
+      "encoded_source_packets": 262,
+      "source_sample_fps": 26.19,
+      "camera_positions": [
+        {
+          "frame": 1,
+          "position": [
+            0.39983596713311037,
+            2.6500003167376875,
+            7.990001571841102
+          ],
+          "fov": 40
+        },
+        {
+          "frame": 60,
+          "position": [
+            0.7324969807583894,
+            2.6906291957812263,
+            7.9174329594643265
+          ],
+          "fov": 40
+        },
+        {
+          "frame": 120,
+          "position": [
+            1.4799455044148042,
+            2.7845616897898076,
+            7.697548357862729
+          ],
+          "fov": 40
+        },
+        {
+          "frame": 180,
+          "position": [
+            2.008594368866373,
+            2.8538261470323807,
+            7.49078844847222
+          ],
+          "fov": 40
+        },
+        {
+          "frame": 240,
+          "position": [
+            2.320184577569834,
+            2.89604302500241,
+            7.347100854825676
+          ],
+          "fov": 40
+        }
+      ],
+      "audio_rms": 0.005338,
+      "game_audio_gain": 2.62,
+      "sha256": "9e46513ec6d7834124ae59ce88307ea3543baaa81fc34b4acb69efc96baf7111"
+    }
+  ],
+  "source_packet_count": 652,
+  "output_packets": 652,
+  "original_live_game_audio": true,
+  "original_score": true,
+  "narration": "Mandarin Kokoro (shared zh-CN/zh-TW)",
+  "decode_check": "PASS",
+  "timestamp_check": "PASS",
+  "sha256": "9f0271e24774ea330a1fb25a31c6532baf1f1745b59ac64f5824772fd270a8a7"
+}
