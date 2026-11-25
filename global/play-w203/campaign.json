@@ -1,0 +1,70 @@
+{
+  "campaign": "w203_global",
+  "attribution": "UTM only; server aggregate conversion activation unverified",
+  "no_analytics_script": true,
+  "links": [
+    {
+      "channel": "x",
+      "locale": "en",
+      "landing": "https://star8592.github.io/DanDao-Web-Preview/global/play-w203/x-en.html",
+      "game": "https://dandao.playmoru.com/?lang=en&utm_source=x&utm_medium=organic_social&utm_campaign=w203_global&utm_content=w197_en",
+      "status": "ready_not_posted"
+    },
+    {
+      "channel": "x",
+      "locale": "zh-CN",
+      "landing": "https://star8592.github.io/DanDao-Web-Preview/global/play-w203/x-zh-cn.html",
+      "game": "https://dandao.playmoru.com/?lang=zh-CN&utm_source=x&utm_medium=organic_social&utm_campaign=w203_global&utm_content=w197_zh_cn",
+      "status": "ready_not_posted"
+    },
+    {
+      "channel": "x",
+      "locale": "zh-TW",
+      "landing": "https://star8592.github.io/DanDao-Web-Preview/global/play-w203/x-zh-tw.html",
+      "game": "https://dandao.playmoru.com/?lang=zh-TW&utm_source=x&utm_medium=organic_social&utm_campaign=w203_global&utm_content=w197_zh_tw",
+      "status": "ready_not_posted"
+    },
+    {
+      "channel": "youtube",
+      "locale": "en",
+      "landing": "https://star8592.github.io/DanDao-Web-Preview/global/play-w203/youtube-en.html",
+      "game": "https://dandao.playmoru.com/?lang=en&utm_source=youtube&utm_medium=organic_social&utm_campaign=w203_global&utm_content=w197_en",
+      "status": "ready_not_posted"
+    },
+    {
+      "channel": "youtube",
+      "locale": "zh-CN",
+      "landing": "https://star8592.github.io/DanDao-Web-Preview/global/play-w203/youtube-zh-cn.html",
+      "game": "https://dandao.playmoru.com/?lang=zh-CN&utm_source=youtube&utm_medium=organic_social&utm_campaign=w203_global&utm_content=w197_zh_cn",
+      "status": "ready_not_posted"
+    },
+    {
+      "channel": "youtube",
+      "locale": "zh-TW",
+      "landing": "https://star8592.github.io/DanDao-Web-Preview/global/play-w203/youtube-zh-tw.html",
+      "game": "https://dandao.playmoru.com/?lang=zh-TW&utm_source=youtube&utm_medium=organic_social&utm_campaign=w203_global&utm_content=w197_zh_tw",
+      "status": "ready_not_posted"
+    },
+    {
+      "channel": "tiktok",
+      "locale": "en",
+      "landing": "https://star8592.github.io/DanDao-Web-Preview/global/play-w203/tiktok-en.html",
+      "game": "https://dandao.playmoru.com/?lang=en&utm_source=tiktok&utm_medium=organic_social&utm_campaign=w203_global&utm_content=w197_en",
+      "status": "ready_not_posted"
+    },
+    {
+      "channel": "tiktok",
+      "locale": "zh-CN",
+      "landing": "https://star8592.github.io/DanDao-Web-Preview/global/play-w203/tiktok-zh-cn.html",
+      "game": "https://dandao.playmoru.com/?lang=zh-CN&utm_source=tiktok&utm_medium=organic_social&utm_campaign=w203_global&utm_content=w197_zh_cn",
+      "status": "ready_not_posted"
+    },
+    {
+      "channel": "tiktok",
+      "locale": "zh-TW",
+      "landing": "https://star8592.github.io/DanDao-Web-Preview/global/play-w203/tiktok-zh-tw.html",
+      "game": "https://dandao.playmoru.com/?lang=zh-TW&utm_source=tiktok&utm_medium=organic_social&utm_campaign=w203_global&utm_content=w197_zh_tw",
+      "status": "ready_not_posted"
+    }
+  ]
+}
